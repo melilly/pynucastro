@@ -43,7 +43,7 @@ class SympyRates:
         # Check if y_i is a reactant or product
         c_reac = rate.reactants.count(y_i)
         c_prod = rate.products.count(y_i)
-        if c_reac == 0 and c_prod == 0:
+        if c_prod - c_reac == 0:
             # The rate doesn't contribute to the ydot for this y_i
             ydot_sym = float(sympy.sympify(0.0))
         else:
