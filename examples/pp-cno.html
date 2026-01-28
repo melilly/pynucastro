@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>p-p chain vs. CNO &#8212; pynucastro 0.0.post1513+g2f6ac8da9 documentation</title>
+    <title>p-p chain vs. CNO &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
   
   
   
@@ -39,15 +39,16 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=a67886db"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/documentation_options.js?v=6682b979"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=eaa7b67c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'examples/pp-cno';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -175,6 +176,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nucleus.html">Nuclear Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lodders_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -185,7 +187,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../library-examples.html">Selecting Rates from a Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../finding-rates.html">Finding Available Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tabulated-weak-rates.html">Tabulated Weak Rate Sources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Networks</span></p>
@@ -195,13 +197,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../electron-capture-example.html">Tabulated Weak Rate Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inert-nuclei.html">Inert Nuclei</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../screening-examples.html">Screening Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom-rates.html">Creating a Custom Rate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../partition-function.html">Reverse Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../derived-rates.html">Derived Rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
@@ -220,12 +223,17 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Nuclear Statistical Equilibrium</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../NSE-example.html">NSE Demonstrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nse-intro.html">NSE Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NSE-example.html">NSE Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NSE-direct-integration.html">NSE vs. Direct Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nse_table.html">Creating an NSE table</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thermodynamics</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../fermi-integrals.html">Fermi-Dirac Integrals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electron-eos.html">The Electron-Positron EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stellar-eos.html">Stellar EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../temperature-evolution.html">Integrating Networks with Temperature Evolution</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
@@ -269,9 +277,13 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../pynucastro.eos.html">pynucastro.eos package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pynucastro.eos.degeneracy_parameter_bounds.html">pynucastro.eos.degeneracy_parameter_bounds module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pynucastro.eos.difference_utils.html">pynucastro.eos.difference_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pynucastro.eos.electron_eos.html">pynucastro.eos.electron_eos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pynucastro.eos.eos_components.html">pynucastro.eos.eos_components module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pynucastro.eos.fermi_integrals.html">pynucastro.eos.fermi_integrals module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pynucastro.eos.quadrature_weights.html">pynucastro.eos.quadrature_weights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pynucastro.eos.stellar_eos.html">pynucastro.eos.stellar_eos module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -311,6 +323,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../pynucastro.reduction.html">pynucastro.reduction package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -638,7 +651,7 @@ He3 + He3 ⟶ p + p + He4
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f51b8ae3a16c2d2d72379daf45c5facbd5a136fc4e19e8afd108ba2310af151e.png" src="../_images/f51b8ae3a16c2d2d72379daf45c5facbd5a136fc4e19e8afd108ba2310af151e.png" />
+<img alt="../_images/1e9ca7e59c260f63730478f35532f494172e97ac44de28082a0ba301469f12ff.png" src="../_images/1e9ca7e59c260f63730478f35532f494172e97ac44de28082a0ba301469f12ff.png" />
 </div>
 </div>
 <p>We see that it is very temperature dependent</p>
@@ -684,7 +697,7 @@ He3 + He3 ⟶ p + p + He4
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0d90aeedbb88e1b9aa75bf27dc9b2a06f2d9c7c96a9ef148ba30cf7d9f36c51f.png" src="../_images/0d90aeedbb88e1b9aa75bf27dc9b2a06f2d9c7c96a9ef148ba30cf7d9f36c51f.png" />
+<img alt="../_images/cdfff98510ed9c02544300f3c6349065abe9bb84e9ce162a025f3c6ea3b7a990.png" src="../_images/cdfff98510ed9c02544300f3c6349065abe9bb84e9ce162a025f3c6ea3b7a990.png" />
 </div>
 </div>
 <p>We can therefore approximate the p-p chain based on the slowest rate.  If we express the rate as:</p>
@@ -808,7 +821,7 @@ T = 40000000.0, nu = 14.11535
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/3343e6c8df8d842cfdf968fba2041b514783ef565903a8f6c63d9e15afccf845.png" src="../_images/3343e6c8df8d842cfdf968fba2041b514783ef565903a8f6c63d9e15afccf845.png" />
+<img alt="../_images/8dce87565b4923937d18d091c8c175bd58a34dd658825428526624610f3a3cc7.png" src="../_images/8dce87565b4923937d18d091c8c175bd58a34dd658825428526624610f3a3cc7.png" />
 </div>
 </div>
 </section>
@@ -844,7 +857,7 @@ T = 40000000.0, nu = 14.11535
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2269420c82eec51d30256aef9924d2f15a3b34e5f20f5392236888802d1b4445.png" src="../_images/2269420c82eec51d30256aef9924d2f15a3b34e5f20f5392236888802d1b4445.png" />
+<img alt="../_images/09c329377a24b105622be49bb3ad23ded152b444145d249b3174e4a498a91149.png" src="../_images/09c329377a24b105622be49bb3ad23ded152b444145d249b3174e4a498a91149.png" />
 </div>
 </div>
 <p>Notice that they cross over at a temperature just hotter than the Sun’s core.  This means that stars more massive than the Sun (actually, about <span class="math notranslate nohighlight">\(1.5~M_\odot\)</span>) are powered by CNO and less massive stars are powered by p-p.  The strong <span class="math notranslate nohighlight">\(T\)</span> dependence of CNO will play a role in determining the structure of those more massive stars.</p>

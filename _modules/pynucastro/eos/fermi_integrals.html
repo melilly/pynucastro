@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pynucastro.eos.fermi_integrals &#8212; pynucastro 0.0.post1513+g2f6ac8da9 documentation</title>
+    <title>pynucastro.eos.fermi_integrals &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
   
   
   
@@ -38,9 +38,9 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=a67886db"></script>
-    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/documentation_options.js?v=6682b979"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=eaa7b67c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -172,6 +172,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../nucleus.html">Nuclear Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lodders_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -182,7 +183,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../../library-examples.html">Selecting Rates from a Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../finding-rates.html">Finding Available Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tabulated-weak-rates.html">Tabulated Weak Rate Sources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Networks</span></p>
@@ -192,13 +193,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../electron-capture-example.html">Tabulated Weak Rate Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../inert-nuclei.html">Inert Nuclei</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../screening-examples.html">Screening Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../custom-rates.html">Creating a Custom Rate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../partition-function.html">Reverse Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../derived-rates.html">Derived Rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
@@ -217,12 +219,17 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Nuclear Statistical Equilibrium</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../../NSE-example.html">NSE Demonstrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nse-intro.html">NSE Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../NSE-example.html">NSE Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../NSE-direct-integration.html">NSE vs. Direct Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../nse_table.html">Creating an NSE table</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thermodynamics</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../fermi-integrals.html">Fermi-Dirac Integrals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../electron-eos.html">The Electron-Positron EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stellar-eos.html">Stellar EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../temperature-evolution.html">Integrating Networks with Temperature Evolution</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
@@ -266,9 +273,13 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../../pynucastro.eos.html">pynucastro.eos package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.degeneracy_parameter_bounds.html">pynucastro.eos.degeneracy_parameter_bounds module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.difference_utils.html">pynucastro.eos.difference_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.electron_eos.html">pynucastro.eos.electron_eos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.eos_components.html">pynucastro.eos.eos_components module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.fermi_integrals.html">pynucastro.eos.fermi_integrals module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.quadrature_weights.html">pynucastro.eos.quadrature_weights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.stellar_eos.html">pynucastro.eos.stellar_eos module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../../pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -308,6 +319,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../../pynucastro.reduction.html">pynucastro.reduction package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -506,6 +518,8 @@ document.write(`
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">.quadrature_weights</span><span class="w"> </span><span class="kn">import</span> <span class="n">w_lag</span><span class="p">,</span> <span class="n">w_leg</span><span class="p">,</span> <span class="n">x_lag</span><span class="p">,</span> <span class="n">x_leg</span>
 
+<span class="n">MAX_EXPONENT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">trunc</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">finfo</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">))</span>
+
 
 <div class="viewcode-block" id="BreakPoints">
 <a class="viewcode-back" href="../../../pynucastro.eos.fermi_integrals.html#pynucastro.eos.fermi_integrals.BreakPoints">[docs]</a>
@@ -596,7 +610,7 @@ document.write(`
 
         <span class="n">term</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigma</span> <span class="o">*</span> <span class="p">(</span><span class="n">eta</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">D</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">term</span> <span class="o">&lt;=</span> <span class="mi">50</span><span class="p">:</span>
-            <span class="n">xi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">term</span><span class="p">))</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigma</span>
+            <span class="n">xi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">term</span><span class="p">))</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigma</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">xi</span> <span class="o">=</span> <span class="n">eta</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">D</span>
 
@@ -625,19 +639,32 @@ document.write(`
     <span class="c1"># in the conversion from x to z).</span>
 
     <span class="n">xsq</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-    <span class="n">sqrt_term</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">*</span> <span class="n">beta</span><span class="p">)</span>
+    <span class="n">sqrt_term</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">xsq</span> <span class="o">*</span> <span class="n">beta</span><span class="p">)</span>
     <span class="n">num</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">k</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">)</span> <span class="o">*</span> <span class="n">sqrt_term</span>
     <span class="c1"># this is what we are usually exponentiating</span>
     <span class="n">delta</span> <span class="o">=</span> <span class="n">xsq</span> <span class="o">-</span> <span class="n">eta</span>
-    <span class="n">cosh_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cosh</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span>  <span class="c1"># this is 0.5 * (exp(xsq - eta) + exp(eta - xsq))</span>
-    <span class="n">tanh_half_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">delta</span><span class="p">)</span>  <span class="c1"># this is (exp(xsq - eta) - 1.0) / (exp(xsq - eta) + 1.0)</span>
-    <span class="n">testm</span> <span class="o">=</span> <span class="n">delta</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">700.0</span>
+
+    <span class="c1"># this is 1.0 / (2.0 + exp(-delta) + exp(delta)</span>
+    <span class="c1"># which is 1.0 / (2.0 * (1.0 + cosh(delta))</span>
+    <span class="n">inv_cosh_term</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">MAX_EXPONENT</span><span class="p">:</span>
+        <span class="n">inv_cosh_term</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cosh</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span>
+
+    <span class="c1"># this is (exp(xsq - eta) - 1.0) / (exp(xsq - eta) + 1.0)</span>
+    <span class="n">tanh_half_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">delta</span><span class="p">)</span>
+
+    <span class="n">testm</span> <span class="o">=</span> <span class="n">delta</span> <span class="o">&lt;</span> <span class="o">-</span><span class="n">MAX_EXPONENT</span>
     <span class="k">if</span> <span class="n">testm</span><span class="p">:</span>
         <span class="n">denomi</span> <span class="o">=</span> <span class="mf">1.0</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">inv_exp_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">delta</span><span class="p">)</span>
-        <span class="c1"># 1 / (exp(x**2 - eta) + 1) rewritten</span>
-        <span class="n">denomi</span> <span class="o">=</span> <span class="n">inv_exp_delta</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">inv_exp_delta</span><span class="p">)</span>
+        <span class="c1">#inv_exp_delta = np.exp(-delta)</span>
+        <span class="k">if</span> <span class="n">delta</span> <span class="o">&gt;</span> <span class="n">MAX_EXPONENT</span><span class="p">:</span>
+            <span class="n">denomi</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1">#inv_exp_delta = 1.0 / np.exp(delta)</span>
+            <span class="n">inv_exp_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">delta</span><span class="p">)</span>
+            <span class="c1"># 1 / (exp(x**2 - eta) + 1) rewritten</span>
+            <span class="n">denomi</span> <span class="o">=</span> <span class="n">inv_exp_delta</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">inv_exp_delta</span><span class="p">)</span>
 
     <span class="c1"># now construct the integrand for what we are actual computing</span>
     <span class="k">if</span> <span class="n">eta_der</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">beta_der</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -649,7 +676,7 @@ document.write(`
         <span class="c1"># this is IB = 1 from Gong et al.</span>
         <span class="c1"># this corresponds to eq A.1 in terms of x**2</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">testm</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">cosh_delta</span><span class="p">))</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="n">inv_cosh_term</span>
 
     <span class="k">elif</span> <span class="n">eta_der</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">beta_der</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="c1"># this is IB = 2 from Gong et al.</span>
@@ -662,13 +689,13 @@ document.write(`
         <span class="c1"># this is IB = 3 from Gong et al.</span>
         <span class="c1"># this corresponds to eq A.3 in terms of x**2</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">testm</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">cosh_delta</span><span class="p">))</span> <span class="o">*</span> <span class="n">tanh_half_delta</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="n">inv_cosh_term</span> <span class="o">*</span> <span class="n">tanh_half_delta</span>
 
     <span class="k">elif</span> <span class="n">eta_der</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">beta_der</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="c1"># this is IB = 4 from Gong et al.</span>
         <span class="c1"># this corresponds to eq A.4 in terms of x**2</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">testm</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">k</span> <span class="o">+</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">cosh_delta</span><span class="p">))</span> <span class="o">/</span> <span class="n">sqrt_term</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">k</span> <span class="o">+</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">*</span> <span class="n">inv_cosh_term</span> <span class="o">/</span> <span class="n">sqrt_term</span>
 
     <span class="k">elif</span> <span class="n">eta_der</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">beta_der</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
         <span class="c1"># this is IB = 5 from Gong et al.</span>
@@ -692,15 +719,26 @@ document.write(`
     <span class="n">num</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="n">k</span> <span class="o">*</span> <span class="n">sqrt_term</span>
     <span class="c1"># this is what we are usually exponentiating</span>
     <span class="n">delta</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">eta</span>
-    <span class="n">cosh_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cosh</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span>
-    <span class="n">tanh_half_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">delta</span><span class="p">)</span>  <span class="c1"># this is (exp(x - eta) - 1.0) / (exp(x - eta) + 1.0)</span>
-    <span class="n">testm</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">eta</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">700</span>
+
+    <span class="c1"># this is 1.0 / (2.0 + exp(-delta) + exp(delta)</span>
+    <span class="c1"># which is 1.0 / (2.0 * (1.0 + cosh(delta))</span>
+    <span class="n">inv_cosh_term</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">MAX_EXPONENT</span><span class="p">:</span>
+        <span class="n">inv_cosh_term</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cosh</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span>
+
+    <span class="c1"># this is (exp(x - eta) - 1.0) / (exp(x - eta) + 1.0)</span>
+    <span class="n">tanh_half_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">delta</span><span class="p">)</span>
+
+    <span class="n">testm</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">eta</span> <span class="o">&lt;</span> <span class="o">-</span><span class="n">MAX_EXPONENT</span>
     <span class="k">if</span> <span class="n">testm</span><span class="p">:</span>
         <span class="n">denomi</span> <span class="o">=</span> <span class="mf">1.0</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">inv_exp_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">delta</span><span class="p">)</span>
-        <span class="c1"># 1 / (exp(x - eta) + 1) rewritten</span>
-        <span class="n">denomi</span> <span class="o">=</span> <span class="n">inv_exp_delta</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">inv_exp_delta</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">delta</span> <span class="o">&gt;</span> <span class="n">MAX_EXPONENT</span><span class="p">:</span>
+            <span class="n">denomi</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">inv_exp_delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">delta</span><span class="p">)</span>
+            <span class="c1"># 1 / (exp(x - eta) + 1) rewritten</span>
+            <span class="n">denomi</span> <span class="o">=</span> <span class="n">inv_exp_delta</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">inv_exp_delta</span><span class="p">)</span>
 
     <span class="c1"># now construct the integrand for what we are actual computing</span>
     <span class="k">if</span> <span class="n">eta_der</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">beta_der</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -712,7 +750,7 @@ document.write(`
         <span class="c1"># this is IB = 1 from Gong et al.</span>
         <span class="c1"># this corresponds to eq A.1</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">testm</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">cosh_delta</span><span class="p">))</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="n">inv_cosh_term</span>
 
     <span class="k">elif</span> <span class="n">eta_der</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">beta_der</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="c1"># this is IB = 2 from Gong et al.</span>
@@ -725,13 +763,13 @@ document.write(`
         <span class="c1"># this is IB = 3 from Gong et al.</span>
         <span class="c1"># this corresponds to eq A.3</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">testm</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">cosh_delta</span><span class="p">))</span> <span class="o">*</span> <span class="n">tanh_half_delta</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="n">inv_cosh_term</span> <span class="o">*</span> <span class="n">tanh_half_delta</span>
 
     <span class="k">elif</span> <span class="n">eta_der</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">beta_der</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="c1"># this is IB = 4 from Gong et al.</span>
         <span class="c1"># this corresponds to eq A.4</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">testm</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">cosh_delta</span><span class="p">))</span> <span class="o">/</span> <span class="n">sqrt_term</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">)</span> <span class="o">*</span> <span class="n">inv_cosh_term</span> <span class="o">/</span> <span class="n">sqrt_term</span>
 
     <span class="k">elif</span> <span class="n">eta_der</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">beta_der</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
         <span class="c1"># this is IB = 5 from Gong et al.</span>
@@ -775,7 +813,7 @@ document.write(`
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">eta</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">eta</span> <span class="o">=</span> <span class="n">eta</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">beta</span> <span class="o">=</span> <span class="n">beta</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">k</span>

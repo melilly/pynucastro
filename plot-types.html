@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Plotting Examples &#8212; pynucastro 0.0.post1513+g2f6ac8da9 documentation</title>
+    <title>Plotting Examples &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
   
   
   
@@ -39,15 +39,16 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=a67886db"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/documentation_options.js?v=6682b979"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=eaa7b67c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'plot-types';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -175,6 +176,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus.html">Nuclear Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lodders_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="current nav bd-sidenav">
@@ -185,7 +187,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="library-examples.html">Selecting Rates from a Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-rates.html">Finding Available Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tabulated-weak-rates.html">Tabulated Weak Rate Sources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Networks</span></p>
@@ -195,13 +197,14 @@
 <li class="toctree-l1"><a class="reference internal" href="electron-capture-example.html">Tabulated Weak Rate Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="inert-nuclei.html">Inert Nuclei</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="screening-examples.html">Screening Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom-rates.html">Creating a Custom Rate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partition-function.html">Reverse Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="derived-rates.html">Derived Rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
@@ -220,12 +223,17 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Nuclear Statistical Equilibrium</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="NSE-example.html">NSE Demonstrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nse-intro.html">NSE Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NSE-example.html">NSE Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NSE-direct-integration.html">NSE vs. Direct Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nse_table.html">Creating an NSE table</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thermodynamics</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="fermi-integrals.html">Fermi-Dirac Integrals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electron-eos.html">The Electron-Positron EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stellar-eos.html">Stellar EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="temperature-evolution.html">Integrating Networks with Temperature Evolution</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
@@ -269,9 +277,13 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.eos.html">pynucastro.eos package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.degeneracy_parameter_bounds.html">pynucastro.eos.degeneracy_parameter_bounds module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.difference_utils.html">pynucastro.eos.difference_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.electron_eos.html">pynucastro.eos.electron_eos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.eos_components.html">pynucastro.eos.eos_components module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.fermi_integrals.html">pynucastro.eos.fermi_integrals module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.quadrature_weights.html">pynucastro.eos.quadrature_weights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.stellar_eos.html">pynucastro.eos.stellar_eos module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -311,6 +323,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.reduction.html">pynucastro.reduction package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -626,12 +639,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/pynucastro/networks/rate_collection.py:752: UserWarning: ReacLib neutron decay rate (&lt;n_to_p_weak_wc12&gt;) does not account for degeneracy at high densities. Consider using tabular rate from Langanke.
-  warnings.warn(msg)
-</pre></div>
-</div>
-</div>
 </div>
 <p>The standard network plot of this is:</p>
 <div class="cell tag_nbval-ignore-output docutils container">
@@ -641,7 +648,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17be42da0708c831a6aae114ef1927538c14488bc83c387dc6cbf6c1c97c3d5e.png" src="_images/17be42da0708c831a6aae114ef1927538c14488bc83c387dc6cbf6c1c97c3d5e.png" />
+<img alt="_images/7cd708d8a9fa8c5dfb82d096ff000219fc40cc31058f9a6012e52f619f70c893.png" src="_images/7cd708d8a9fa8c5dfb82d096ff000219fc40cc31058f9a6012e52f619f70c893.png" />
 </div>
 </div>
 </section>
@@ -686,7 +693,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/2bffe4c53144012194230ea9c15c86f583a89cc1743c554602d164be4733ca1a.png" src="_images/2bffe4c53144012194230ea9c15c86f583a89cc1743c554602d164be4733ca1a.png" />
+<img alt="_images/becad1040e998467d55b21efe66f99a912e3dce22a0bc546675fdb7100c7927c.png" src="_images/becad1040e998467d55b21efe66f99a912e3dce22a0bc546675fdb7100c7927c.png" />
 </div>
 </div>
 </section>
@@ -701,7 +708,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/e65106633c1c0354e547f077bdb47bdc38e8267e2ca0e0afc6710c1ef6674685.png" src="_images/e65106633c1c0354e547f077bdb47bdc38e8267e2ca0e0afc6710c1ef6674685.png" />
+<img alt="_images/5cec9df763c874f1796ffb53c526c6cdedb9a4ad8689e110711a3520720a8401.png" src="_images/5cec9df763c874f1796ffb53c526c6cdedb9a4ad8689e110711a3520720a8401.png" />
 </div>
 </div>
 </section>
@@ -717,7 +724,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/f25719de057bff600d0142d623f484ae91ae45c5fcc025a970fffcbb1a249c1a.png" src="_images/f25719de057bff600d0142d623f484ae91ae45c5fcc025a970fffcbb1a249c1a.png" />
+<img alt="_images/cb66619c17302c42aaa740e197e5c34165315c250e7afacf9c33ad3be66b6147.png" src="_images/cb66619c17302c42aaa740e197e5c34165315c250e7afacf9c33ad3be66b6147.png" />
 </div>
 </div>
 <p>Sometimes, for a given nucleus, there are multiple rates that consume it, but one might be much more dominant than the others.  We can set a threshold to old show the rates consuming a nucleus if they are within a desired factor of the fastest rate using <code class="docutils literal notranslate"><span class="pre">consuming_rate_threshold</span></code>:</p>
@@ -730,7 +737,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/396b228641b34f533a2f54014b0424e571d4eb9022ff3868e052f491000eb938.png" src="_images/396b228641b34f533a2f54014b0424e571d4eb9022ff3868e052f491000eb938.png" />
+<img alt="_images/80a225a56074ca40e49de331ec1fcc79784516baed1c26acf4ecf16dae46b66a.png" src="_images/80a225a56074ca40e49de331ec1fcc79784516baed1c26acf4ecf16dae46b66a.png" />
 </div>
 </div>
 </section>
@@ -746,7 +753,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/6e3931ad4fb59a3452bfb67c0fb54d8c2e11dd30ece6876bf9d80e19eefc3504.png" src="_images/6e3931ad4fb59a3452bfb67c0fb54d8c2e11dd30ece6876bf9d80e19eefc3504.png" />
+<img alt="_images/ec1a6ccb78c686db288cd06c0aff1b20e21bdb3efb2936dbed85fa592dcd650d.png" src="_images/ec1a6ccb78c686db288cd06c0aff1b20e21bdb3efb2936dbed85fa592dcd650d.png" />
 </div>
 </div>
 </section>
@@ -763,7 +770,21 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/27d10986a329505e61e7d7da32894cc0951759e95f7211c8a36652a82345866f.png" src="_images/27d10986a329505e61e7d7da32894cc0951759e95f7211c8a36652a82345866f.png" />
+<img alt="_images/897d94e0b9975641c83eebc18154f8a2d15ada212bc57b78a523ec3705b857df.png" src="_images/897d94e0b9975641c83eebc18154f8a2d15ada212bc57b78a523ec3705b857df.png" />
+</div>
+</div>
+<p>We can also display the edges as the net rate (forward - reverse) as a single directed edge using <code class="docutils literal notranslate"><span class="pre">use_net_rate</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">color_nodes_by_abundance</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">use_net_rate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/54c7a60abfe3e02d3147693fced1c98ab283a7be943038bf55b1e1dec47f1976.png" src="_images/54c7a60abfe3e02d3147693fced1c98ab283a7be943038bf55b1e1dec47f1976.png" />
 </div>
 </div>
 </section>
@@ -779,7 +800,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d414291593a935a1a50b7e298db6fb3500c7513c92eb417a1ff7b95b40ed5ee4.png" src="_images/d414291593a935a1a50b7e298db6fb3500c7513c92eb417a1ff7b95b40ed5ee4.png" />
+<img alt="_images/7020433691fbb0ef5748c81a239c823b57933e44a93e8d9fa1ac6d36c093c4b1.png" src="_images/7020433691fbb0ef5748c81a239c823b57933e44a93e8d9fa1ac6d36c093c4b1.png" />
 </div>
 </div>
 <p>Any edge can be labelled by passing a dictionary keyed by a tuple of the nodes in the network.</p>
@@ -800,7 +821,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1589a799b930e40ecf8ac1140e25fe383d3adb843772da8bb65afca7c16aebaf.png" src="_images/1589a799b930e40ecf8ac1140e25fe383d3adb843772da8bb65afca7c16aebaf.png" />
+<img alt="_images/b89eb0420be5a03938839fb1da36978198e429f8f6058471b121855e05f047ce.png" src="_images/b89eb0420be5a03938839fb1da36978198e429f8f6058471b121855e05f047ce.png" />
 </div>
 </div>
 </section>
@@ -816,7 +837,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/42de5ff6fc8cba0c862d700454df4997a42ea268cc4fcfbef71e767174480439.png" src="_images/42de5ff6fc8cba0c862d700454df4997a42ea268cc4fcfbef71e767174480439.png" />
+<img alt="_images/071dd62ac7a4fe33767d71b55b68f901a9ae15ba3535baad54824d492e2f0c8f.png" src="_images/071dd62ac7a4fe33767d71b55b68f901a9ae15ba3535baad54824d492e2f0c8f.png" />
 </div>
 </div>
 <p>We can also highlight rates using the <code class="docutils literal notranslate"><span class="pre">highlight_filter_function</span></code> mechanism.  This takes a function that operates on a rate and returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if we wish to highlight the rate (i.e., as if we used a highlighter marker over the line).</p>
@@ -830,7 +851,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d49e24da7dfd43fbbc78bccb9a0b9f216ac94c2772c7b95ab1cb7d2b517d4535.png" src="_images/d49e24da7dfd43fbbc78bccb9a0b9f216ac94c2772c7b95ab1cb7d2b517d4535.png" />
+<img alt="_images/7f32eb0feda7a4ef1c1270fb491109b4c3e8be3c6fcc64aea9d265e5937d2cab.png" src="_images/7f32eb0feda7a4ef1c1270fb491109b4c3e8be3c6fcc64aea9d265e5937d2cab.png" />
 </div>
 </div>
 </section>
@@ -860,7 +881,7 @@ where</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1d5e6b5c67797187e6f0019adf1bcb5023b0892cc78673debaa2b805b7569264.png" src="_images/1d5e6b5c67797187e6f0019adf1bcb5023b0892cc78673debaa2b805b7569264.png" />
+<img alt="_images/628036620620801b10b5fb15c3f8610edf267a434548540484ef54af64023411.png" src="_images/628036620620801b10b5fb15c3f8610edf267a434548540484ef54af64023411.png" />
 </div>
 </div>
 <div class="admonition warning">
@@ -905,7 +926,7 @@ where</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/7f439091ff4e7f78aa4bf091439d596e9f7edaa91f0d92813260b4291ee798bf.png" src="_images/7f439091ff4e7f78aa4bf091439d596e9f7edaa91f0d92813260b4291ee798bf.png" />
+<img alt="_images/dfee00861b7af88576e13ee2e5ab81b700c917f4361874bc8e55753062bf0272.png" src="_images/dfee00861b7af88576e13ee2e5ab81b700c917f4361874bc8e55753062bf0272.png" />
 </div>
 </div>
 <p>The plot is configurable through a large number of keyword arguments. Here we want to look at the rates at which nuclides are being created or destroyed, so we color by <span class="math notranslate nohighlight">\(\dot{Y}\)</span>, the rate of change of molar abundance. Density and temperature need to be supplied to evaluate the rates. A full list of valid keyword arguments can be found in the API documentation.</p>
@@ -917,7 +938,7 @@ where</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/813e51ab77f5592ccff45880a33df4b9e6a4655abec0930c5de07f7a8c307d7b.png" src="_images/813e51ab77f5592ccff45880a33df4b9e6a4655abec0930c5de07f7a8c307d7b.png" />
+<img alt="_images/84f9f445db82b5c2364ee2096cd92be33c0708fa8f3582b073cdf6e321a0904f.png" src="_images/84f9f445db82b5c2364ee2096cd92be33c0708fa8f3582b073cdf6e321a0904f.png" />
 </div>
 </div>
 <p>Unlike the network plot, this won’t omit hydrogen and helium by default. To just look at the heavier nuclides, we can define a function to filter by proton number.  Here we also plot
@@ -931,7 +952,7 @@ where</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/567b490ddec498cf29908265a7b954dee6c650a31596ac2ef1f200d42815aec3.png" src="_images/567b490ddec498cf29908265a7b954dee6c650a31596ac2ef1f200d42815aec3.png" />
+<img alt="_images/cb88425199a7d774c07e75d617c8cd0797ffaef286b8fbce5a01cd9fd3f2d86a.png" src="_images/cb88425199a7d774c07e75d617c8cd0797ffaef286b8fbce5a01cd9fd3f2d86a.png" />
 </div>
 </div>
 </section>
@@ -945,7 +966,7 @@ where</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/08a9990fb8b5934efcae6fbcb53df998960b367c8a16319390a393eb3035ba8c.png" src="_images/08a9990fb8b5934efcae6fbcb53df998960b367c8a16319390a393eb3035ba8c.png" />
+<img alt="_images/b93559dc57840e807b7ceb8ffe09ab40c9993db9c8744829bde050bf40559b41.png" src="_images/b93559dc57840e807b7ceb8ffe09ab40c9993db9c8744829bde050bf40559b41.png" />
 </div>
 </div>
 </section>

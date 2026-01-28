@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Approximating alpha-capture &#8212; pynucastro 0.0.post1513+g2f6ac8da9 documentation</title>
+    <title>Approximating alpha-capture &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
   
   
   
@@ -39,15 +39,16 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=a67886db"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/documentation_options.js?v=6682b979"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=eaa7b67c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'alpha-gamma-approx';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -175,6 +176,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus.html">Nuclear Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lodders_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -185,7 +187,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="library-examples.html">Selecting Rates from a Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-rates.html">Finding Available Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tabulated-weak-rates.html">Tabulated Weak Rate Sources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Networks</span></p>
@@ -195,13 +197,14 @@
 <li class="toctree-l1"><a class="reference internal" href="electron-capture-example.html">Tabulated Weak Rate Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="inert-nuclei.html">Inert Nuclei</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="screening-examples.html">Screening Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom-rates.html">Creating a Custom Rate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partition-function.html">Reverse Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="derived-rates.html">Derived Rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="current nav bd-sidenav">
@@ -220,12 +223,17 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Nuclear Statistical Equilibrium</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="NSE-example.html">NSE Demonstrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nse-intro.html">NSE Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NSE-example.html">NSE Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NSE-direct-integration.html">NSE vs. Direct Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nse_table.html">Creating an NSE table</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thermodynamics</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="fermi-integrals.html">Fermi-Dirac Integrals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electron-eos.html">The Electron-Positron EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stellar-eos.html">Stellar EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="temperature-evolution.html">Integrating Networks with Temperature Evolution</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
@@ -269,9 +277,13 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.eos.html">pynucastro.eos package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.degeneracy_parameter_bounds.html">pynucastro.eos.degeneracy_parameter_bounds module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.difference_utils.html">pynucastro.eos.difference_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.electron_eos.html">pynucastro.eos.electron_eos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.eos_components.html">pynucastro.eos.eos_components module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.fermi_integrals.html">pynucastro.eos.fermi_integrals module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.quadrature_weights.html">pynucastro.eos.quadrature_weights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.stellar_eos.html">pynucastro.eos.stellar_eos module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -311,6 +323,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.reduction.html">pynucastro.reduction package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -602,7 +615,7 @@ combining them into a single effective rate by assuming that the protons and nuc
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reaclib_library</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">ReacLibLibrary</span><span class="p">()</span>
 <span class="n">mylib</span> <span class="o">=</span> <span class="n">reaclib_library</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">([</span><span class="s2">&quot;mg24&quot;</span><span class="p">,</span> <span class="s2">&quot;al27&quot;</span><span class="p">,</span> <span class="s2">&quot;si28&quot;</span><span class="p">,</span> <span class="s2">&quot;p31&quot;</span><span class="p">,</span> <span class="s2">&quot;s32&quot;</span><span class="p">,</span> <span class="s2">&quot;he4&quot;</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">])</span>
-<span class="n">pynet</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">PythonNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">mylib</span><span class="p">])</span>
+<span class="n">pynet</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">PythonNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">mylib</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -614,7 +627,7 @@ combining them into a single effective rate by assuming that the protons and nuc
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/ad3aa4dd38dfe62ad53885e8956bd5334e04f5d32f1fccbb67b966e5ab8ab930.png" src="_images/ad3aa4dd38dfe62ad53885e8956bd5334e04f5d32f1fccbb67b966e5ab8ab930.png" />
+<img alt="_images/923eb5f13bdf9eba6fa07529d652c6c9362a8dca0c85fba311c28014c1a47056.png" src="_images/923eb5f13bdf9eba6fa07529d652c6c9362a8dca0c85fba311c28014c1a47056.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -674,7 +687,7 @@ combining them into a single effective rate by assuming that the protons and nuc
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/c0489e743288c30684625078bb8e038754a0ecf2087481c94e562c81c775bc7a.png" src="_images/c0489e743288c30684625078bb8e038754a0ecf2087481c94e562c81c775bc7a.png" />
+<img alt="_images/8b7553d1b751dab49596dc011f238f8be2cf843d53e2d7c3d0baa2906b7db166.png" src="_images/8b7553d1b751dab49596dc011f238f8be2cf843d53e2d7c3d0baa2906b7db166.png" />
 </div>
 </div>
 </section>
@@ -794,7 +807,7 @@ S32
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/339c3bb83474b91e9fcb7835374df0991bdd70eb8dee2830dbdc54f1e755853d.png" src="_images/339c3bb83474b91e9fcb7835374df0991bdd70eb8dee2830dbdc54f1e755853d.png" />
+<img alt="_images/9f83616bbcd187ef6dd7b3524b039f9b8e6dffc1bbc613a410833f8eec2d0646.png" src="_images/9f83616bbcd187ef6dd7b3524b039f9b8e6dffc1bbc613a410833f8eec2d0646.png" />
 </div>
 </div>
 <p>As we see above, the nuclei <span class="math notranslate nohighlight">\({}^{27}\mathrm{Al}\)</span> and <span class="math notranslate nohighlight">\({}^{31}\mathrm{P}\)</span> no longer appear in the network, but  the links to them are still understood to the network.  This reduces the size of the network, while still preserving those flows.</p>
@@ -821,8 +834,8 @@ S32
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dYdt[jhe4] = (
-      ( -rho*Y[jhe4]*Y[jmg24]*rate_eval.Mg24_He4__Si28__approx +Y[jsi28]*rate_eval.Si28__Mg24_He4__approx ) +
-      ( -rho*Y[jhe4]*Y[jsi28]*rate_eval.Si28_He4__S32__approx +Y[js32]*rate_eval.S32__Si28_He4__approx )
+      ( -rho*Y[jhe4]*Y[jmg24]*rate_eval.Mg24_He4_to_Si28_approx +Y[jsi28]*rate_eval.Si28_to_Mg24_He4_approx ) +
+      ( -rho*Y[jhe4]*Y[jsi28]*rate_eval.Si28_He4_to_S32_approx +Y[js32]*rate_eval.S32_to_Si28_He4_approx )
    )
 </pre></div>
 </div>
@@ -831,20 +844,20 @@ S32
 <p>And the rate approximations are computed as:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">pynet</span><span class="o">.</span><span class="n">get_rate</span><span class="p">(</span><span class="s2">&quot;mg24_he4__si28__approx&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">pynet</span><span class="o">.</span><span class="n">get_rate</span><span class="p">(</span><span class="s2">&quot;mg24_he4_to_si28_approx&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">function_string_py</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>@numba.njit()
-def Mg24_He4__Si28__approx(rate_eval, tf):
-    r_ag = rate_eval.He4_Mg24__Si28__removed
-    r_ap = rate_eval.He4_Mg24__p_Al27__removed
-    r_pg = rate_eval.p_Al27__Si28__removed
-    r_pa = rate_eval.p_Al27__He4_Mg24__removed
+def Mg24_He4_to_Si28_approx(rate_eval, tf):
+    r_ag = rate_eval.He4_Mg24_to_Si28_removed
+    r_ap = rate_eval.He4_Mg24_to_p_Al27_removed
+    r_pg = rate_eval.p_Al27_to_Si28_removed
+    r_pa = rate_eval.p_Al27_to_He4_Mg24_removed
     rate = r_ag + r_ap * r_pg / (r_pg + r_pa)
-    rate_eval.Mg24_He4__Si28__approx = rate
+    rate_eval.Mg24_He4_to_Si28_approx = rate
 </pre></div>
 </div>
 </div>
@@ -894,7 +907,7 @@ def Mg24_He4__Si28__approx(rate_eval, tf):
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/a10cb131a08408c38abb842d56c26a1affa9ae536aa55b9ee6f6762b67bc1cc3.png" src="_images/a10cb131a08408c38abb842d56c26a1affa9ae536aa55b9ee6f6762b67bc1cc3.png" />
+<img alt="_images/fc0ac29403699d0ad3fa265fd35d757f54655995ad5e1efd2932c5fd23a64d5a.png" src="_images/fc0ac29403699d0ad3fa265fd35d757f54655995ad5e1efd2932c5fd23a64d5a.png" />
 </div>
 </div>
 </section>
@@ -925,7 +938,7 @@ def Mg24_He4__Si28__approx(rate_eval, tf):
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/21177380e8870c1d1901523909be716e8243841c461f240dc95f8a75d7a71486.png" src="_images/21177380e8870c1d1901523909be716e8243841c461f240dc95f8a75d7a71486.png" />
+<img alt="_images/ea1d2a13626e9f153418bdd026e940d6f29b05491ae57d875233a648c5b6beab.png" src="_images/ea1d2a13626e9f153418bdd026e940d6f29b05491ae57d875233a648c5b6beab.png" />
 </div>
 </div>
 <p>Here the dotted line is the approximate network.  We see that the results agree well.</p>
@@ -942,7 +955,7 @@ def Mg24_He4__Si28__approx(rate_eval, tf):
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/e8b3f25f11d638d970fadac0680d56ebd04aba14fe241975e8c37ce67824f255.png" src="_images/e8b3f25f11d638d970fadac0680d56ebd04aba14fe241975e8c37ce67824f255.png" />
+<img alt="_images/5146432fe85e18c7265c58f5a5d188a6b4499a3afc3ddfbfcec14cd37c196f98.png" src="_images/5146432fe85e18c7265c58f5a5d188a6b4499a3afc3ddfbfcec14cd37c196f98.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1016,7 +1029,7 @@ def Mg24_He4__Si28__approx(rate_eval, tf):
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/f2835994ade0912a33c180138cabad88c192827899af7dcd03d013c26bfec6cc.png" src="_images/f2835994ade0912a33c180138cabad88c192827899af7dcd03d013c26bfec6cc.png" />
+<img alt="_images/7b257b303f548098e1a524b9e816ec672fe860ffbe7723feab26c2ebd0c7130e.png" src="_images/7b257b303f548098e1a524b9e816ec672fe860ffbe7723feab26c2ebd0c7130e.png" />
 </div>
 </div>
 <p>Here we see all 3 networks.  The full network (7 nuclei) is the solid lines.  The approximate version of that is the dotted line.  We see that they track reasonably well, especially when the abundance is high.  The dashed line is the version of the network that has the same 4 nuclei as the approximate network, but with out approximating the <span class="math notranslate nohighlight">\((\alpha, p)(p,\gamma)\)</span> links, so we see that the <span class="math notranslate nohighlight">\({}^{24}\mathrm{Mg}\)</span> takes longer to burn.</p>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Creating an NSE table &#8212; pynucastro 0.0.post1513+g2f6ac8da9 documentation</title>
+    <title>Creating an NSE table &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
   
   
   
@@ -39,20 +39,21 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=a67886db"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/documentation_options.js?v=6682b979"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=eaa7b67c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'nse_table';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Fermi-Dirac Integrals" href="fermi-integrals.html" />
-    <link rel="prev" title="NSE Demonstrations" href="NSE-example.html" />
+    <link rel="prev" title="NSE vs. Direct Integration" href="NSE-direct-integration.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,6 +176,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus.html">Nuclear Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lodders_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -185,7 +187,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="library-examples.html">Selecting Rates from a Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-rates.html">Finding Available Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tabulated-weak-rates.html">Tabulated Weak Rate Sources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Networks</span></p>
@@ -195,13 +197,14 @@
 <li class="toctree-l1"><a class="reference internal" href="electron-capture-example.html">Tabulated Weak Rate Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="inert-nuclei.html">Inert Nuclei</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="screening-examples.html">Screening Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom-rates.html">Creating a Custom Rate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partition-function.html">Reverse Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="derived-rates.html">Derived Rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
@@ -220,12 +223,17 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Nuclear Statistical Equilibrium</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="NSE-example.html">NSE Demonstrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nse-intro.html">NSE Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NSE-example.html">NSE Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NSE-direct-integration.html">NSE vs. Direct Integration</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Creating an NSE table</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thermodynamics</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="fermi-integrals.html">Fermi-Dirac Integrals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electron-eos.html">The Electron-Positron EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stellar-eos.html">Stellar EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="temperature-evolution.html">Integrating Networks with Temperature Evolution</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
@@ -269,9 +277,13 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.eos.html">pynucastro.eos package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.degeneracy_parameter_bounds.html">pynucastro.eos.degeneracy_parameter_bounds module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.difference_utils.html">pynucastro.eos.difference_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.electron_eos.html">pynucastro.eos.electron_eos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.eos_components.html">pynucastro.eos.eos_components module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.fermi_integrals.html">pynucastro.eos.fermi_integrals module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.quadrature_weights.html">pynucastro.eos.quadrature_weights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.stellar_eos.html">pynucastro.eos.stellar_eos module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -311,6 +323,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.reduction.html">pynucastro.reduction package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -619,13 +632,7 @@ warning: Ni57 was not able to be linked in TabularLibrary
 <p>Now we’ll remove the ReacLib rates for the cases where we have a tabular rate</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dupes</span> <span class="o">=</span> <span class="n">all_lib</span><span class="o">.</span><span class="n">find_duplicate_links</span><span class="p">()</span>
-<span class="n">rates_to_remove</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dupes</span><span class="p">:</span>
-    <span class="n">rates_to_remove</span> <span class="o">+=</span> <span class="p">[</span><span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">d</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">pyna</span><span class="o">.</span><span class="n">rates</span><span class="o">.</span><span class="n">ReacLibRate</span><span class="p">)]</span>
-
-<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rates_to_remove</span><span class="p">:</span>
-    <span class="n">all_lib</span><span class="o">.</span><span class="n">remove_rate</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">all_lib</span><span class="o">.</span><span class="n">eliminate_duplicates</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -677,46 +684,46 @@ next temperature.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># NSE table generated by pynucastro 0.0.post1513+g2f6ac8da9
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># NSE table generated by pynucastro 0.0.post1628+gf5dadcc7c
 # original NSENetwork had 13 nuclei
 #
 #   log10(rho)       log10(T)           Ye             Abar            &lt;B/A&gt;          dYe/dt         dAbar/dt        d&lt;B/A&gt;/dt         e_nu       
-   7.0000000000    9.6000000000    0.5000000000   50.2051965167    8.6280555771  -4.3798684e-05   1.7079991e-17   2.3285948e-06   7.4765875e+13 
-   7.0000000000    9.6000000000    0.4650000000   55.7461181560    8.7870631885  -5.5253373e-09  -9.2881961e-22   3.9317237e-10   1.3980145e+10 
+   7.0000000000    9.6000000000    0.5000000000   50.2051965167    8.6280555771  -4.3798684e-05              -0   2.3285948e-06   7.4765875e+13 
+   7.0000000000    9.6000000000    0.4650000000   55.7461181560    8.7870631885  -5.5253373e-09  -6.3762211e-22   3.9317237e-10   1.3980145e+10 
    7.0000000000    9.6000000000    0.4300000000   11.0637644863    8.1412181124   0.00017699678  -2.9553154e-26  -1.8453759e-12   2.7707299e+14 
-   7.0000000000   10.0000000000    0.5000000000    1.2148721368    1.6682000987     0.084056593   9.4050686e-58   5.7350248e-41   7.8635828e+17 
-   7.0000000000   10.0000000000    0.4650000000    1.2129154977    1.6556759493      0.10066493   1.0499774e-55   3.5220152e-41   8.3544455e+17 
-   7.0000000000   10.0000000000    0.4300000000    1.2071216016    1.6183519865       0.1178642   1.5367417e-55   5.9197765e-42   8.8944343e+17 
-   7.0000000000   10.4000000000    0.5000000000    1.0000000000    0.0000000002       5.7463273  7.8561884e-219   6.744271e-203   2.3050257e+20 
-   7.0000000000   10.4000000000    0.4650000000    1.0000000000    0.0000000002       7.2542055 -3.4372499e-218  5.8190855e-203    2.360043e+20 
-   7.0000000000   10.4000000000    0.4300000000    1.0000000000    0.0000000002       8.7650901 -1.1470818e-218  3.8278045e-203   2.4155562e+20 
+   7.0000000000   10.0000000000    0.5000000000    1.2148721368    1.6682000987     0.084056593   -6.301396e-56   5.7350248e-41   7.8635828e+17 
+   7.0000000000   10.0000000000    0.4650000000    1.2129154977    1.6556759493      0.10066493    4.453029e-56   3.5220152e-41   8.3544455e+17 
+   7.0000000000   10.0000000000    0.4300000000    1.2071216016    1.6183519865       0.1178642   1.0446129e-55   5.9197765e-42   8.8944343e+17 
+   7.0000000000   10.4000000000    0.5000000000    1.0000000000    0.0000000002       5.7463273   1.137387e-218   6.744271e-203   2.3050257e+20 
+   7.0000000000   10.4000000000    0.4650000000    1.0000000000    0.0000000002       7.2542055  1.3406511e-219  5.8190855e-203    2.360043e+20 
+   7.0000000000   10.4000000000    0.4300000000    1.0000000000    0.0000000002       8.7650901 -9.2370746e-219  3.8278045e-203   2.4155562e+20 
    8.0000000000    9.6000000000    0.5000000000   54.3190287662    8.6383977879  -0.00084867596   3.1990002e-16   4.3696922e-05   1.4741939e+15 
-   8.0000000000    9.6000000000    0.4650000000   55.8970086078    8.7873938438  -4.9038114e-08   1.8253071e-20    4.195729e-09   1.2981616e+11 
+   8.0000000000    9.6000000000    0.4650000000   55.8970086078    8.7873938438  -4.9038114e-08   1.2437933e-20    4.195729e-09   1.2981616e+11 
    8.0000000000    9.6000000000    0.4300000000   11.0638264094    8.1412220464   9.2047376e-06  -3.3885397e-29  -5.6069146e-13   1.1254068e+13 
-   8.0000000000   10.0000000000    0.5000000000    2.5712548608    5.7636834391    -0.019589285  -2.5863906e-34   1.7213902e-19   1.6310989e+17 
-   8.0000000000   10.0000000000    0.4650000000    2.5124367565    5.6778079210   -0.0041256863   1.5552568e-33   2.1068176e-19   1.5065028e+17 
-   8.0000000000   10.0000000000    0.4300000000    2.3664071228    5.4461458125    0.0093041571  -4.6131074e-34   1.1443317e-19    1.616981e+17 
-   8.0000000000   10.4000000000    0.5000000000    1.0000000215    0.0000002024        1.213841   1.991458e-165  9.8468142e-150   2.1894106e+20 
-   8.0000000000   10.4000000000    0.4650000000    1.0000000212    0.0000002004       2.8346072 -1.4128967e-165  8.4165829e-150   2.2127881e+20 
-   8.0000000000   10.4000000000    0.4300000000    1.0000000206    0.0000001945       4.4726034  2.4421366e-165  5.4823209e-150   2.2397331e+20 
-   9.0000000000    9.6000000000    0.5000000000   55.5133155461    8.6413416287    -0.060150514              -0    0.0031209543   1.5551546e+17 
-   9.0000000000    9.6000000000    0.4650000000   55.9133553778    8.7874269700  -3.9837589e-06  -2.8963396e-19   3.6045209e-07   1.0369016e+13 
+   8.0000000000   10.0000000000    0.5000000000    2.5712548608    5.7636834391    -0.019589285  -2.0890078e-34   1.7213902e-19   1.6310989e+17 
+   8.0000000000   10.0000000000    0.4650000000    2.5124367565    5.6778079210   -0.0041256863   1.5932478e-33   2.1068176e-19   1.5065028e+17 
+   8.0000000000   10.0000000000    0.4300000000    2.3664071228    5.4461458125    0.0093041571  -4.3603344e-34   1.1443317e-19    1.616981e+17 
+   8.0000000000   10.4000000000    0.5000000000    1.0000000215    0.0000002024        1.213841 -1.3256128e-165  9.8468142e-150   2.1894106e+20 
+   8.0000000000   10.4000000000    0.4650000000    1.0000000212    0.0000002004       2.8346072  3.5877412e-165  8.4165829e-150   2.2127881e+20 
+   8.0000000000   10.4000000000    0.4300000000    1.0000000206    0.0000001945       4.4726034   9.619863e-166  5.4823209e-150   2.2397331e+20 
+   9.0000000000    9.6000000000    0.5000000000   55.5133155460    8.6413416287    -0.060150514              -0    0.0031209543   1.5551546e+17 
+   9.0000000000    9.6000000000    0.4650000000   55.9133553778    8.7874269700  -3.9837589e-06  -9.9303071e-19   3.6045209e-07   1.0369016e+13 
    9.0000000000    9.6000000000    0.4300000000   11.0638296395    8.1412222516   1.0225013e-08  -9.8140885e-34  -5.2463927e-15   1.1664591e+10 
-   9.0000000000   10.0000000000    0.5000000000    4.3121776451    7.1515970038     -0.10742171   4.0163705e-19   2.9758632e-05   4.7264474e+17 
-   9.0000000000   10.0000000000    0.4650000000    5.1247512774    7.3995936852    -0.019430688  -7.0908138e-20   3.3567893e-06    8.738192e+16 
-   9.0000000000   10.0000000000    0.4300000000    4.4162917436    7.0777667298   -0.0059568646   2.1719087e-21   5.1854462e-07   3.2607547e+16 
-   9.0000000000   10.4000000000    0.5000000000    1.0000214754    0.0002025496      -17.715251 -3.2893139e-112   3.7269578e-96     2.77358e+20 
-   9.0000000000   10.4000000000    0.4650000000    1.0000212646    0.0002005606      -15.005795 -1.2481114e-111   3.0828704e-96   2.5962746e+20 
-   9.0000000000   10.4000000000    0.4300000000    1.0000206400    0.0001946701      -12.327314 -5.1370063e-113   1.9401534e-96   2.4324141e+20 
+   9.0000000000   10.0000000000    0.5000000000    4.3121776451    7.1515970038     -0.10742171   1.0474064e-18   2.9758632e-05   4.7264474e+17 
+   9.0000000000   10.0000000000    0.4650000000    5.1247512774    7.3995936852    -0.019430688   2.0151467e-19   3.3567893e-06    8.738192e+16 
+   9.0000000000   10.0000000000    0.4300000000    4.4162917436    7.0777667298   -0.0059568646   2.0912436e-21   5.1854462e-07   3.2607547e+16 
+   9.0000000000   10.4000000000    0.5000000000    1.0000214754    0.0002025496      -17.715251  7.2283688e-113   3.7269578e-96     2.77358e+20 
+   9.0000000000   10.4000000000    0.4650000000    1.0000212646    0.0002005606      -15.005795 -4.3431108e-112   3.0828704e-96   2.5962746e+20 
+   9.0000000000   10.4000000000    0.4300000000    1.0000206400    0.0001946701      -12.327314  -1.105167e-111   1.9401534e-96   2.4324141e+20 
   10.0000000000    9.6000000000    0.5000000000   55.8690710156    8.6423241378      -5.2274435              -0      0.27200888   2.9375322e+19 
-  10.0000000000    9.6000000000    0.4650000000   55.9152992533    8.7874248629  -0.00092936032  -1.8273036e-16     8.53828e-05   4.3024741e+15 
+  10.0000000000    9.6000000000    0.4650000000   55.9152992533    8.7874248629  -0.00092936032  -2.6217834e-16     8.53828e-05   4.3024741e+15 
   10.0000000000    9.6000000000    0.4300000000   11.0638297827    8.1412222607   5.0971987e-15  -9.3106432e-42  -6.8646472e-21       5801.4456 
-  10.0000000000   10.0000000000    0.5000000000   13.9373408169    8.2743569660      -5.5783268   2.1566023e-14      0.10960359   3.9379731e+19 
-  10.0000000000   10.0000000000    0.4650000000   28.2439837438    8.6492581227    -0.075077755   5.7214672e-16   0.00050735877   5.2201547e+17 
-  10.0000000000   10.0000000000    0.4300000000   10.2419481655    8.0844804259   -0.0025107086  -7.7994308e-20    1.107337e-06   1.7236325e+16 
-  10.0000000000   10.4000000000    0.5000000000    1.0197762664    0.1829102375      -196.64449   2.4436705e-57   3.9060715e-42   2.3555843e+21 
-  10.0000000000   10.4000000000    0.4650000000    1.0195859199    0.1811835464       -167.5422   2.8981879e-58   3.0444336e-42   1.9968627e+21 
-  10.0000000000   10.4000000000    0.4300000000    1.0190251346    0.1760927406      -140.99607   2.6882149e-58   1.8184629e-42   1.6720802e+21 
+  10.0000000000   10.0000000000    0.5000000000   13.9373408169    8.2743569660      -5.5783268              -0      0.10960359   3.9379731e+19 
+  10.0000000000   10.0000000000    0.4650000000   28.2439837438    8.6492581227    -0.075077755   2.3058172e-16   0.00050735877   5.2201547e+17 
+  10.0000000000   10.0000000000    0.4300000000   10.2419481655    8.0844804259   -0.0025107086  -7.7993291e-20    1.107337e-06   1.7236325e+16 
+  10.0000000000   10.4000000000    0.5000000000    1.0197762664    0.1829102375      -196.64449   2.8992701e-58   3.9060715e-42   2.3555843e+21 
+  10.0000000000   10.4000000000    0.4650000000    1.0195859199    0.1811835464       -167.5422   5.1753355e-58   3.0444336e-42   1.9968627e+21 
+  10.0000000000   10.4000000000    0.4300000000    1.0190251346    0.1760927406      -140.99607  -8.2714306e-59   1.8184629e-42   1.6720802e+21 
 </pre></div>
 </div>
 </div>
@@ -737,12 +744,12 @@ into the closest nuclei in a smaller set.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="NSE-example.html"
+       href="NSE-direct-integration.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">NSE Demonstrations</p>
+        <p class="prev-next-title">NSE vs. Direct Integration</p>
       </div>
     </a>
     <a class="right-next"

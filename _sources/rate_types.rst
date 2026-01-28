@@ -8,6 +8,8 @@ the core functionality.
 
 Here we describe the most commonly used rates.
 
+.. _reaclib:
+
 ReacLib
 -------
 
@@ -62,8 +64,10 @@ The ReacLib database lists the source / reference of each rate with a 6 characte
 * The first 4 characters are the label that gives the source of the rate, according to:
   https://reaclib.jinaweb.org/labels.php
 
-  This is stored in both ``SingleSet`` and ``ReacLibRate`` as the
-  ``.label`` attribute.
+  This is stored in both :py:class:`SingleSet
+  <pynucastro.rates.reaclib_rate.SingleSet>` and
+  :py:class:`ReacLibRate <pynucastro.rates.reaclib_rate.ReacLibRate>`
+  as the ``.label`` attribute.
 
 * The next character is ``n`` for a non-resonant set, ``r`` for a
   resonance, or ``w`` to indicate that it is a weak rate.
@@ -81,8 +85,16 @@ The ReacLib database lists the source / reference of each rate with a 6 characte
   If the weak flag, ``w`` is set, then ``ReacLibRate.weak`` will be ``True``.
 
 * The 6th character indicates it the rate is a derived reverse rate,
-  by the presence of a `v`.  This is stored in both ``SingleSet`` and
-  ``ReacLibRate`` as the ``.reverse`` attribute.
+  by the presence of a `v`.
+
+  This is stored in both :py:class:`SingleSet <pynucastro.rates.reaclib_rate.SingleSet>`
+  and :py:class:`ReacLibRate <pynucastro.rates.reaclib_rate.ReacLibRate>` as the
+  ``.derived_from_inverse`` attribute.
+
+  .. note::
+
+     This is not necessarily a reverse rate ($Q < 0$), so in
+     pynucastro, we call it "derived from inverse".
 
 
 Weak rates
@@ -177,8 +189,8 @@ Similarly,  :func:`jacobian_string_py <pynucastro.rates.rate.Rate.jacobian_strin
 outputs the contribution to the Jacobian for this rate.
 
 
-Tabulated Rates
----------------
+Tabulated Weak Rates
+--------------------
 
 For electron captures and beta-decays (which are of the form
 :math:`\rm{A \rightarrow B}`), we use tabulated rates.  These are
@@ -271,3 +283,17 @@ evaluate the rate and output the python code.  The function
 <pynucastro.rates.tabular_rate.TabularRate.function_string_py>`
 outputs the python code for managing the interpolation of the data.
 For C++ networks, this interpolation is handled directly by the network class.
+
+
+Temperature-tabulated Rates
+---------------------------
+
+For charged-particle capture rates, an alternative to the ReacLib parameterization
+is to provide a table of $T$ vs. $N_A \langle \sigma v \rangle$.  This tabulation
+is provided by the :py:obj:`TemperatureTabularRate <pynucastro.rates.temperature_tabular_rate.TemperatureTabularRate>`.
+
+A ``TemperatureTabularRate`` stores the 1D table of $N_A \langle \sigma v\rangle$ and
+the ``eval()`` method performs an interpolation on this given a
+temperature.  This rate can then be used in the same way as a
+``ReacLibRate``, and it provides compatible functions to write out the
+function string needed to evaluate the rate.

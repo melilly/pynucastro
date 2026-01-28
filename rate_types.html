@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Reaction Rate Types &#8212; pynucastro 0.0.post1513+g2f6ac8da9 documentation</title>
+    <title>Reaction Rate Types &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
   
   
   
@@ -39,15 +39,16 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=a67886db"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/documentation_options.js?v=6682b979"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=eaa7b67c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rate_types';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -175,6 +176,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus.html">Nuclear Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lodders_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -185,7 +187,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="library-examples.html">Selecting Rates from a Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-rates.html">Finding Available Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tabulated-weak-rates.html">Tabulated Weak Rate Sources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Networks</span></p>
@@ -195,13 +197,14 @@
 <li class="toctree-l1"><a class="reference internal" href="electron-capture-example.html">Tabulated Weak Rate Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="inert-nuclei.html">Inert Nuclei</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="screening-examples.html">Screening Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom-rates.html">Creating a Custom Rate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partition-function.html">Reverse Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="derived-rates.html">Derived Rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
@@ -220,12 +223,17 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Nuclear Statistical Equilibrium</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="NSE-example.html">NSE Demonstrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nse-intro.html">NSE Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NSE-example.html">NSE Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NSE-direct-integration.html">NSE vs. Direct Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nse_table.html">Creating an NSE table</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thermodynamics</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="fermi-integrals.html">Fermi-Dirac Integrals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electron-eos.html">The Electron-Positron EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stellar-eos.html">Stellar EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="temperature-evolution.html">Integrating Networks with Temperature Evolution</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
@@ -269,9 +277,13 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.eos.html">pynucastro.eos package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.degeneracy_parameter_bounds.html">pynucastro.eos.degeneracy_parameter_bounds module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.difference_utils.html">pynucastro.eos.difference_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.electron_eos.html">pynucastro.eos.electron_eos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.eos_components.html">pynucastro.eos.eos_components module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.fermi_integrals.html">pynucastro.eos.fermi_integrals module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.quadrature_weights.html">pynucastro.eos.quadrature_weights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.eos.stellar_eos.html">pynucastro.eos.stellar_eos module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -311,6 +323,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.reduction.html">pynucastro.reduction package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -575,12 +588,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ydot-term">ydot term</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabulated-rates">Tabulated Rates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">ydot term</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabulated-weak-rates">Tabulated Weak Rates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ydot term</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format">Table format</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Rate evaluation functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Rate evaluation functions</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-tabulated-rates">Temperature-tabulated Rates</a></li>
 </ul>
             </nav>
         </div>
@@ -600,7 +614,7 @@ as the base class for all the different rate types and provides
 the core functionality.</p>
 <p>Here we describe the most commonly used rates.</p>
 <section id="reaclib">
-<h2>ReacLib<a class="headerlink" href="#reaclib" title="Link to this heading">#</a></h2>
+<span id="id1"></span><h2>ReacLib<a class="headerlink" href="#reaclib" title="Link to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://reaclib.jinaweb.org/">JINA ReacLib database</a> provides
 the core thermonuclear rates.  These are managed in pynucastro through
 the <a class="reference internal" href="pynucastro.rates.reaclib_rate.html#pynucastro.rates.reaclib_rate.ReacLibRate" title="pynucastro.rates.reaclib_rate.ReacLibRate"><code class="xref py py-func docutils literal notranslate"><span class="pre">ReacLibRate</span></code></a> class.</p>
@@ -666,8 +680,9 @@ taking the form:</p>
 <ul>
 <li><p>The first 4 characters are the label that gives the source of the rate, according to:
 <a class="reference external" href="https://reaclib.jinaweb.org/labels.php">https://reaclib.jinaweb.org/labels.php</a></p>
-<p>This is stored in both <code class="docutils literal notranslate"><span class="pre">SingleSet</span></code> and <code class="docutils literal notranslate"><span class="pre">ReacLibRate</span></code> as the
-<code class="docutils literal notranslate"><span class="pre">.label</span></code> attribute.</p>
+<p>This is stored in both <a class="reference internal" href="pynucastro.rates.reaclib_rate.html#pynucastro.rates.reaclib_rate.SingleSet" title="pynucastro.rates.reaclib_rate.SingleSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">SingleSet</span></code></a> and
+<a class="reference internal" href="pynucastro.rates.reaclib_rate.html#pynucastro.rates.reaclib_rate.ReacLibRate" title="pynucastro.rates.reaclib_rate.ReacLibRate"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReacLibRate</span></code></a>
+as the <code class="docutils literal notranslate"><span class="pre">.label</span></code> attribute.</p>
 </li>
 <li><p>The next character is <code class="docutils literal notranslate"><span class="pre">n</span></code> for a non-resonant set, <code class="docutils literal notranslate"><span class="pre">r</span></code> for a
 resonance, or <code class="docutils literal notranslate"><span class="pre">w</span></code> to indicate that it is a weak rate.</p>
@@ -683,8 +698,16 @@ for _combined_.</p></li>
 <p>If the weak flag, <code class="docutils literal notranslate"><span class="pre">w</span></code> is set, then <code class="docutils literal notranslate"><span class="pre">ReacLibRate.weak</span></code> will be <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 </li>
 <li><p>The 6th character indicates it the rate is a derived reverse rate,
-by the presence of a <cite>v</cite>.  This is stored in both <code class="docutils literal notranslate"><span class="pre">SingleSet</span></code> and
-<code class="docutils literal notranslate"><span class="pre">ReacLibRate</span></code> as the <code class="docutils literal notranslate"><span class="pre">.reverse</span></code> attribute.</p></li>
+by the presence of a <cite>v</cite>.</p>
+<p>This is stored in both <a class="reference internal" href="pynucastro.rates.reaclib_rate.html#pynucastro.rates.reaclib_rate.SingleSet" title="pynucastro.rates.reaclib_rate.SingleSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">SingleSet</span></code></a>
+and <a class="reference internal" href="pynucastro.rates.reaclib_rate.html#pynucastro.rates.reaclib_rate.ReacLibRate" title="pynucastro.rates.reaclib_rate.ReacLibRate"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReacLibRate</span></code></a> as the
+<code class="docutils literal notranslate"><span class="pre">.derived_from_inverse</span></code> attribute.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is not necessarily a reverse rate (<span class="math notranslate nohighlight">\(Q &lt; 0\)</span>), so in
+pynucastro, we call it “derived from inverse”.</p>
+</div>
+</li>
 </ul>
 </section>
 <section id="weak-rates">
@@ -756,8 +779,8 @@ is the responsibility of the network.</p>
 outputs the contribution to the Jacobian for this rate.</p>
 </section>
 </section>
-<section id="tabulated-rates">
-<h2>Tabulated Rates<a class="headerlink" href="#tabulated-rates" title="Link to this heading">#</a></h2>
+<section id="tabulated-weak-rates">
+<h2>Tabulated Weak Rates<a class="headerlink" href="#tabulated-weak-rates" title="Link to this heading">#</a></h2>
 <p>For electron captures and beta-decays (which are of the form
 <span class="math notranslate nohighlight">\(\rm{A \rightarrow B}\)</span>), we use tabulated rates.  These are
 two-dimensional tables, in terms of <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(\rho Y_e\)</span>,
@@ -773,8 +796,8 @@ into a single rate.</p>
 <p>The data reading and interpolation are managed by the
 <a class="reference internal" href="pynucastro.rates.tabular_rate.html#pynucastro.rates.tabular_rate.TabularRate" title="pynucastro.rates.tabular_rate.TabularRate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabularRate</span></code></a>
 class.</p>
-<section id="id1">
-<h3>ydot term<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<section id="id2">
+<h3>ydot term<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>The form of the reaction <span class="math notranslate nohighlight">\(A \rightarrow B\)</span> is:</p>
 <div class="math notranslate nohighlight">
 \[\dot{Y}_A = -Y(A) \lambda\]</div>
@@ -819,14 +842,25 @@ given <code class="docutils literal notranslate"><span class="pre">rhoY</span></
 is inferred from the data file itself.</p>
 </div>
 </section>
-<section id="id2">
-<h3>Rate evaluation functions<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h3>Rate evaluation functions<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>Analogous to <code class="docutils literal notranslate"><span class="pre">ReacLibRate</span></code>, <code class="docutils literal notranslate"><span class="pre">TabularRate</span></code> provides functions to
 evaluate the rate and output the python code.  The function
 <a class="reference internal" href="pynucastro.rates.tabular_rate.html#pynucastro.rates.tabular_rate.TabularRate.function_string_py" title="pynucastro.rates.tabular_rate.TabularRate.function_string_py"><code class="xref py py-func docutils literal notranslate"><span class="pre">function_string_py</span></code></a>
 outputs the python code for managing the interpolation of the data.
 For C++ networks, this interpolation is handled directly by the network class.</p>
 </section>
+</section>
+<section id="temperature-tabulated-rates">
+<h2>Temperature-tabulated Rates<a class="headerlink" href="#temperature-tabulated-rates" title="Link to this heading">#</a></h2>
+<p>For charged-particle capture rates, an alternative to the ReacLib parameterization
+is to provide a table of <span class="math notranslate nohighlight">\(T\)</span> vs. <span class="math notranslate nohighlight">\(N_A \langle \sigma v \rangle\)</span>.  This tabulation
+is provided by the <a class="reference internal" href="pynucastro.rates.temperature_tabular_rate.html#pynucastro.rates.temperature_tabular_rate.TemperatureTabularRate" title="pynucastro.rates.temperature_tabular_rate.TemperatureTabularRate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TemperatureTabularRate</span></code></a>.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">TemperatureTabularRate</span></code> stores the 1D table of <span class="math notranslate nohighlight">\(N_A \langle \sigma v\rangle\)</span> and
+the <code class="docutils literal notranslate"><span class="pre">eval()</span></code> method performs an interpolation on this given a
+temperature.  This rate can then be used in the same way as a
+<code class="docutils literal notranslate"><span class="pre">ReacLibRate</span></code>, and it provides compatible functions to write out the
+function string needed to evaluate the rate.</p>
 </section>
 </section>
 
@@ -884,12 +918,13 @@ For C++ networks, this interpolation is handled directly by the network class.</
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ydot-term">ydot term</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabulated-rates">Tabulated Rates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">ydot term</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabulated-weak-rates">Tabulated Weak Rates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ydot term</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format">Table format</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Rate evaluation functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Rate evaluation functions</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-tabulated-rates">Temperature-tabulated Rates</a></li>
 </ul>
   </nav></div>
 

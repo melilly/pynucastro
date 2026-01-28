@@ -31,6 +31,7 @@ and interactively exploring nuclear reaction networks.
 
    sources
    nucleus
+   lodders_composition.ipynb
 
 .. toctree::
    :maxdepth: 1
@@ -48,7 +49,7 @@ and interactively exploring nuclear reaction networks.
    :caption: Working with Libraries
    :hidden:
 
-   library-examples.ipynb
+   finding-rates.ipynb
    tabulated-weak-rates.ipynb
 
 .. toctree::
@@ -61,6 +62,7 @@ and interactively exploring nuclear reaction networks.
    electron-capture-example.ipynb
    electron-captures.ipynb
    alternate-rates.ipynb
+   inert-nuclei.ipynb
 
 .. toctree::
    :maxdepth: 1
@@ -70,7 +72,7 @@ and interactively exploring nuclear reaction networks.
    screening-examples
    modify-example.ipynb
    custom-rates.ipynb
-   partition-function
+   derived-rates
 
 .. toctree::
    :maxdepth: 1
@@ -90,7 +92,9 @@ and interactively exploring nuclear reaction networks.
    :caption: Nuclear Statistical Equilibrium
    :hidden:
 
+   nse-intro
    NSE-example
+   NSE-direct-integration
    nse_table
 
 .. toctree::
@@ -99,6 +103,9 @@ and interactively exploring nuclear reaction networks.
    :hidden:
 
    fermi-integrals
+   electron-eos
+   stellar-eos
+   temperature-evolution
 
 .. toctree::
    :maxdepth: 1

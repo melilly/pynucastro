@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pynucastro.networks.helper &#8212; pynucastro 0.0.post1513+g2f6ac8da9 documentation</title>
+    <title>pynucastro.networks.helper &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
   
   
   
@@ -38,9 +38,9 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=a67886db"></script>
-    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/documentation_options.js?v=6682b979"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=eaa7b67c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -172,6 +172,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../nucleus.html">Nuclear Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lodders_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -182,7 +183,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../../library-examples.html">Selecting Rates from a Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../finding-rates.html">Finding Available Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tabulated-weak-rates.html">Tabulated Weak Rate Sources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Networks</span></p>
@@ -192,13 +193,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../electron-capture-example.html">Tabulated Weak Rate Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../inert-nuclei.html">Inert Nuclei</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../screening-examples.html">Screening Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../custom-rates.html">Creating a Custom Rate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../partition-function.html">Reverse Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../derived-rates.html">Derived Rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
@@ -217,12 +219,17 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Nuclear Statistical Equilibrium</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../../NSE-example.html">NSE Demonstrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nse-intro.html">NSE Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../NSE-example.html">NSE Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../NSE-direct-integration.html">NSE vs. Direct Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../nse_table.html">Creating an NSE table</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thermodynamics</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../fermi-integrals.html">Fermi-Dirac Integrals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../electron-eos.html">The Electron-Positron EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stellar-eos.html">Stellar EOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../temperature-evolution.html">Integrating Networks with Temperature Evolution</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
@@ -266,9 +273,13 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../../pynucastro.eos.html">pynucastro.eos package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.degeneracy_parameter_bounds.html">pynucastro.eos.degeneracy_parameter_bounds module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.difference_utils.html">pynucastro.eos.difference_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.electron_eos.html">pynucastro.eos.electron_eos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.eos_components.html">pynucastro.eos.eos_components module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.fermi_integrals.html">pynucastro.eos.fermi_integrals module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.quadrature_weights.html">pynucastro.eos.quadrature_weights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.eos.stellar_eos.html">pynucastro.eos.stellar_eos module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../../pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -308,6 +319,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../../pynucastro.reduction.html">pynucastro.reduction package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -486,8 +498,7 @@ document.write(`
   <h1>Source code for pynucastro.networks.helper</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;Methods to ease the creation of networks.&quot;&quot;&quot;</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">pynucastro.rates</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span><span class="n">DerivedRate</span><span class="p">,</span> <span class="n">ReacLibLibrary</span><span class="p">,</span> <span class="n">ReacLibRate</span><span class="p">,</span>
-                              <span class="n">TabularLibrary</span><span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pynucastro.rates</span><span class="w"> </span><span class="kn">import</span> <span class="n">DerivedRate</span><span class="p">,</span> <span class="n">ReacLibLibrary</span><span class="p">,</span> <span class="n">TabularLibrary</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">.amrexastro_cxx_network</span><span class="w"> </span><span class="kn">import</span> <span class="n">AmrexAstroCxxNetwork</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">.fortran_network</span><span class="w"> </span><span class="kn">import</span> <span class="n">FortranNetwork</span>
@@ -499,9 +510,12 @@ document.write(`
 <a class="viewcode-back" href="../../../pynucastro.networks.helper.html#pynucastro.networks.helper.network_helper">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">network_helper</span><span class="p">(</span><span class="n">nuclei</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span>
                    <span class="n">network_type</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="p">,</span>
+                   <span class="n">inert_nuclei</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                    <span class="n">use_detailed_balance</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                    <span class="n">use_tabular_rates</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-                   <span class="n">tabular_ordering</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+                   <span class="n">tabular_ordering</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                   <span class="n">with_reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                   <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Generate a basic network connecting all of the input nuclei</span>
 <span class="sd">    using all of the rates known to pynucastro.</span>
 
@@ -510,20 +524,27 @@ document.write(`
 <span class="sd">    nuclei : Iterable(Nucleus)</span>
 <span class="sd">        the nuclei to use for the network</span>
 <span class="sd">    network_type : str</span>
-<span class="sd">        the type of network to create.  Allowed values are:</span>
+<span class="sd">        The type of network to create.  Allowed values are:</span>
 
 <span class="sd">        * &quot;python&quot; : create a :py:obj:`PythonNetwork &lt;pynucastro.networks.python_network.PythonNetwork&gt;`</span>
 <span class="sd">        * &quot;cxx&quot; : create a :py:obj:`SimpleCxxNetwork &lt;pynucastro.networks.simple_cxx_network.SimpleCxxNetwork&gt;`</span>
 <span class="sd">        * &quot;fortran&quot; : create a :py:obj:`FortranNetwork &lt;pynucastro.networks.fortran_network.FortranNetwork&gt;`</span>
 <span class="sd">        * &quot;amrex&quot; : create a :py:obj:`AmrexAstroCxxNetwork &lt;pynucastro.networks.amrexastro_cxx_network.AmrexAstroCxxNetwork&gt;`</span>
+<span class="sd">    inert_nuclei : list, tuple</span>
+<span class="sd">        an iterable of Nuclei that should be part of the collection but</span>
+<span class="sd">        are not linked via reactions to the other Nuclei in the network.</span>
 <span class="sd">    use_detailed_balanace : bool</span>
-<span class="sd">        do we rederive inverse rates using detailed balance?</span>
+<span class="sd">        Do we rederive inverse rates using detailed balance?</span>
 <span class="sd">    use_tabular_rates : bool</span>
-<span class="sd">        do we include tabulated weak rates?</span>
+<span class="sd">        Do we include tabulated weak rates?</span>
 <span class="sd">    tabular_ordering : Iterable(str)</span>
-<span class="sd">        if we are including tabular rates, a list of sources</span>
+<span class="sd">        If we are including tabular rates, a list of sources</span>
 <span class="sd">        can be provided to specify which rate sources are used,</span>
 <span class="sd">        and the priority that each source should have.</span>
+<span class="sd">    with_reverse : bool</span>
+<span class="sd">        Do we include the reverse rates from ReacLib?</span>
+<span class="sd">    verbose : bool</span>
+<span class="sd">        Output more information</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
@@ -532,7 +553,7 @@ document.write(`
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">rl</span> <span class="o">=</span> <span class="n">ReacLibLibrary</span><span class="p">()</span>
-    <span class="n">lib</span> <span class="o">=</span> <span class="n">rl</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">(</span><span class="n">nuclei</span><span class="p">)</span>
+    <span class="n">lib</span> <span class="o">=</span> <span class="n">rl</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">(</span><span class="n">nuclei</span><span class="p">,</span> <span class="n">with_reverse</span><span class="o">=</span><span class="n">with_reverse</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">use_tabular_rates</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">tabular_ordering</span><span class="p">:</span>
@@ -545,14 +566,7 @@ document.write(`
         <span class="c1"># if we have both a tabular and ReacLib rate,</span>
         <span class="c1"># remove the ReacLib version</span>
 
-        <span class="n">rates_to_remove</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">pair</span> <span class="ow">in</span> <span class="n">lib</span><span class="o">.</span><span class="n">find_duplicate_links</span><span class="p">():</span>
-            <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">pair</span><span class="p">:</span>
-                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">ReacLibRate</span><span class="p">):</span>
-                    <span class="n">rates_to_remove</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-
-        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rates_to_remove</span><span class="p">:</span>
-            <span class="n">lib</span><span class="o">.</span><span class="n">remove_rate</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+        <span class="n">lib</span><span class="o">.</span><span class="n">eliminate_duplicates</span><span class="p">(</span><span class="n">rate_type_preference</span><span class="o">=</span><span class="s2">&quot;tabular&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">use_detailed_balance</span><span class="p">:</span>
         <span class="n">rates_to_derive</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span><span class="o">.</span><span class="n">get_rates</span><span class="p">()</span>
@@ -561,22 +575,27 @@ document.write(`
         <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rates_to_derive</span><span class="p">:</span>
             <span class="n">fr</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_rate_by_nuclei</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">products</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">reactants</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">fr</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;modifying </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2"> from </span><span class="si">{</span><span class="n">fr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;modifying </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2"> from </span><span class="si">{</span><span class="n">fr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
                 <span class="n">lib</span><span class="o">.</span><span class="n">remove_rate</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-                <span class="n">d</span> <span class="o">=</span> <span class="n">DerivedRate</span><span class="p">(</span><span class="n">rate</span><span class="o">=</span><span class="n">fr</span><span class="p">,</span> <span class="n">compute_Q</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">use_pf</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                <span class="n">d</span> <span class="o">=</span> <span class="n">DerivedRate</span><span class="p">(</span><span class="n">source_rate</span><span class="o">=</span><span class="n">fr</span><span class="p">,</span> <span class="n">use_pf</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">use_unreliable_spins</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
                 <span class="n">lib</span><span class="o">.</span><span class="n">add_rate</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">network_type</span> <span class="o">==</span> <span class="s2">&quot;python&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">PythonNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">lib</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">PythonNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">lib</span><span class="p">],</span>
+                             <span class="n">inert_nuclei</span><span class="o">=</span><span class="n">inert_nuclei</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">network_type</span> <span class="o">==</span> <span class="s2">&quot;cxx&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">SimpleCxxNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">lib</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">SimpleCxxNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">lib</span><span class="p">],</span>
+                                <span class="n">inert_nuclei</span><span class="o">=</span><span class="n">inert_nuclei</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">network_type</span> <span class="o">==</span> <span class="s2">&quot;fortran&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">FortranNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">lib</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">FortranNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">lib</span><span class="p">],</span>
+                              <span class="n">inert_nuclei</span><span class="o">=</span><span class="n">inert_nuclei</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">network_type</span> <span class="o">==</span> <span class="s2">&quot;amrex&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">AmrexAstroCxxNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">lib</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">AmrexAstroCxxNetwork</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="p">[</span><span class="n">lib</span><span class="p">],</span>
+                                    <span class="n">inert_nuclei</span><span class="o">=</span><span class="n">inert_nuclei</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">)</span>
 
     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;invalid network_type&quot;</span><span class="p">)</span></div>
 
