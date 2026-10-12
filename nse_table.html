@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Creating an NSE table &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
+    <title>Creating an NSE table &#8212; pynucastro 0.0.post1885+gf77b0332d documentation</title>
   
   
   
@@ -16,74 +16,72 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=4418a689" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=15ab05d9" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
 
-    <script src="_static/documentation_options.js?v=6682b979"></script>
+    <script src="_static/documentation_options.js?v=8dc8f566"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=eaa7b67c"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'nse_table';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Fermi-Dirac Integrals" href="fermi-integrals.html" />
     <link rel="prev" title="NSE vs. Direct Integration" href="NSE-direct-integration.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.0" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -91,7 +89,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search..."
          aria-label="Search..."
          autocomplete="off"
@@ -99,15 +96,15 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -116,7 +113,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -146,7 +144,7 @@
     
     
     <img src="_static/logo.png" class="logo__image only-light" alt=""/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt=""/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt=""/>
   
   
     <p class="title logo__title">pynucastro 0.0</p>
@@ -154,15 +152,11 @@
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
@@ -176,7 +170,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus.html">Nuclear Properties</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lodders_composition.html">Solar Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solar_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -184,6 +178,7 @@
 <li class="toctree-l1"><a class="reference internal" href="plot-types.html">Plotting Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_network.html">Basic Networks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pynucastro-integration.html">Integrating a Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="starlib.html">Networks with StarLib rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
@@ -198,25 +193,29 @@
 <li class="toctree-l1"><a class="reference internal" href="electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="inert-nuclei.html">Inert Nuclei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documenting-networks.html">Documenting Networks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="screening-examples.html">Screening Rates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom-rates.html">Creating a Custom Rate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="derived-rates.html">Derived Rates</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Approximating Rates</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="alpha-gamma-approx.html">Approximating alpha-capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="double-n-capture.html">Approximating double n-capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modified-rates.html">Modified Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="co-approximations.html">Approximating C and O Burning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branched-rates.html"><code class="docutils literal notranslate"><span class="pre">BranchedRate</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="not_in_ydot_term.html">Rate Sequences with Extra Reactants</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="approximate-rates.html">Approximate and Modified Rates</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="alpha-gamma-approx.html">Approximating alpha-capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="double-n-capture.html">Approximating double n-capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modified-rates.html">Modified Rates</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1"><a class="reference internal" href="nse-protons.html">Using NSE Protons</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unimportant-rates.html">Removing Unimportant Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="network-cycles.html">Finding Cycles (with NetworkX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="most-probable-path.html">Finding the Likely Path Between Nuclei (with NetworkX)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stiffness.html">Assessing the Stiffness of a Network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reduction.html">Network Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sens_analysis_example.html">Sensitivity Analysis</a></li>
@@ -238,6 +237,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="neutrino-cooling.html">Neutrino Cooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neutrino-cooling-effects.html">Effects of Thermal Neutrino Cooling in Network Integrations</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exporting Networks</span></p>
 <ul class="nav bd-sidenav">
@@ -255,7 +255,15 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Some Useful Networks</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="common-nets.html">Common Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mesa-basic.html">MESA <code class="docutils literal notranslate"><span class="pre">basic.net</span></code> Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cno-network.html">CNO burning network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aprox13.html">The “aprox13” network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="he-burning-example.html">A He-burning Network</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Working With Simulation Codes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mesa-nova.html">Importing MESA Models and Visualizing Reactive Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examples in Nuclear Astrophysics</span></p>
 <ul class="nav bd-sidenav">
@@ -264,7 +272,16 @@
 <li class="toctree-l1"><a class="reference internal" href="examples/hot-CNO-breakout-example.html">hot-CNO and breakout</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/triple_alpha_eval.html">Computing the Screened Triple-alpha rate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/he-burning.html">Ratio of C/O from He burning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/c-burning-products.html">Products of Carbon Burning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/supernova-lightcurve.html">A Supernova Lightcurve</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Developer Documentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rates-devel.html">Working with <code class="docutils literal notranslate"><span class="pre">Rate</span></code> Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding-rates.html">Adding Rates from the Literature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nets-devel.html">Working with Network Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jac-devel.html">Form of the Jacobian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and Comparing Backends</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
@@ -289,8 +306,10 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.amrexastro_cxx_network.html">pynucastro.networks.amrexastro_cxx_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.base_cxx_network.html">pynucastro.networks.base_cxx_network module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.common_networks.html">pynucastro.networks.common_networks module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.fortran_network.html">pynucastro.networks.fortran_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.helper.html">pynucastro.networks.helper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.network_compare.html">pynucastro.networks.network_compare module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.nse_network.html">pynucastro.networks.nse_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.python_network.html">pynucastro.networks.python_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.rate_collection.html">pynucastro.networks.rate_collection module</a></li>
@@ -304,6 +323,7 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.nucdata.html">pynucastro.nucdata package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.composition.html">pynucastro.nucdata.composition module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.elements.html">pynucastro.nucdata.elements module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.halflife_table.html">pynucastro.nucdata.halflife_table module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.mass_table.html">pynucastro.nucdata.mass_table module</a></li>
@@ -315,6 +335,8 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.rates.html">pynucastro.rates package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.alternate_rates.html">pynucastro.rates.alternate_rates module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.approximate_rates.html">pynucastro.rates.approximate_rates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.aprox_family_rates.html">pynucastro.rates.aprox_family_rates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.branched_rate.html">pynucastro.rates.branched_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.derived_rate.html">pynucastro.rates.derived_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.files.html">pynucastro.rates.files module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.known_duplicates.html">pynucastro.rates.known_duplicates module</a></li>
@@ -322,6 +344,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.modified_rate.html">pynucastro.rates.modified_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.starlib_rate.html">pynucastro.rates.starlib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
@@ -336,8 +359,10 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.screening.screening_util.html">pynucastro.screening.screening_util module</a></li>
 </ul>
 </details></li>
+<li class="toctree-l3"><a class="reference internal" href="pynucastro.mesa_utils.html">pynucastro.mesa_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.mpi_utils.html">pynucastro.mpi_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.numba_util.html">pynucastro.numba_util module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pynucastro.sort_utils.html">pynucastro.sort_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.utils.html">pynucastro.utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.yt_utils.html">pynucastro.yt_utils module</a></li>
 </ul>
@@ -358,9 +383,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -524,7 +554,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -538,24 +568,23 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
   </button>
-`);
-</script>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 
 </div></div>
       
@@ -604,27 +633,27 @@ document.write(`
 <p>Since we often want to include a lot of isotopes of the same element, we’ll use the <a class="reference internal" href="pynucastro.nucdata.nucleus.html#pynucastro.nucdata.nucleus.get_nuclei_in_range" title="pynucastro.nucdata.nucleus.get_nuclei_in_range"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_nuclei_in_range</span></code></a> helper function:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nucs</span> <span class="o">=</span> <span class="p">[</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">),</span> <span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">),</span> <span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;he4&quot;</span><span class="p">)]</span>
-<span class="n">nucs</span> <span class="o">+=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">get_nuclei_in_range</span><span class="p">(</span><span class="s2">&quot;fe&quot;</span><span class="p">,</span> <span class="n">A_range</span><span class="o">=</span><span class="p">[</span><span class="mi">52</span><span class="p">,</span> <span class="mi">56</span><span class="p">])</span>
-<span class="n">nucs</span> <span class="o">+=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">get_nuclei_in_range</span><span class="p">(</span><span class="s2">&quot;co&quot;</span><span class="p">,</span> <span class="n">A_range</span><span class="o">=</span><span class="p">[</span><span class="mi">54</span><span class="p">,</span> <span class="mi">56</span><span class="p">])</span>
-<span class="n">nucs</span> <span class="o">+=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">get_nuclei_in_range</span><span class="p">(</span><span class="s2">&quot;ni&quot;</span><span class="p">,</span> <span class="n">A_range</span><span class="o">=</span><span class="p">[</span><span class="mi">56</span><span class="p">,</span> <span class="mi">57</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nucs</span> <span class="o">=</span> <span class="p">[</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"p"</span><span class="p">),</span> <span class="n">Nucleus</span><span class="p">(</span><span class="s2">"n"</span><span class="p">),</span> <span class="n">Nucleus</span><span class="p">(</span><span class="s2">"he4"</span><span class="p">)]</span>
+<span class="n">nucs</span> <span class="o">+=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">get_nuclei_in_range</span><span class="p">(</span><span class="s2">"fe"</span><span class="p">,</span> <span class="n">A_range</span><span class="o">=</span><span class="p">[</span><span class="mi">52</span><span class="p">,</span> <span class="mi">56</span><span class="p">])</span>
+<span class="n">nucs</span> <span class="o">+=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">get_nuclei_in_range</span><span class="p">(</span><span class="s2">"co"</span><span class="p">,</span> <span class="n">A_range</span><span class="o">=</span><span class="p">[</span><span class="mi">54</span><span class="p">,</span> <span class="mi">56</span><span class="p">])</span>
+<span class="n">nucs</span> <span class="o">+=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">get_nuclei_in_range</span><span class="p">(</span><span class="s2">"ni"</span><span class="p">,</span> <span class="n">A_range</span><span class="o">=</span><span class="p">[</span><span class="mi">56</span><span class="p">,</span> <span class="mi">57</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tl</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">TabularLibrary</span><span class="p">()</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">(</span><span class="n">nucs</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tl</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">TabularWeakLibrary</span><span class="p">()</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">(</span><span class="n">nucs</span><span class="p">)</span>
 <span class="n">rl</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">ReacLibLibrary</span><span class="p">()</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">(</span><span class="n">nucs</span><span class="p">)</span>
 <span class="n">all_lib</span> <span class="o">=</span> <span class="n">tl</span> <span class="o">+</span> <span class="n">rl</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>warning: He4 was not able to be linked in TabularLibrary
-warning: Fe53 was not able to be linked in TabularLibrary
-warning: Fe52 was not able to be linked in TabularLibrary
-warning: Ni57 was not able to be linked in TabularLibrary
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>warning: He4 was not able to be linked in TabularWeakLibrary
+warning: Fe53 was not able to be linked in TabularWeakLibrary
+warning: Fe52 was not able to be linked in TabularWeakLibrary
+warning: Ni57 was not able to be linked in TabularWeakLibrary
 </pre></div>
 </div>
 </div>
@@ -684,46 +713,46 @@ next temperature.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># NSE table generated by pynucastro 0.0.post1628+gf5dadcc7c
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># NSE table generated by pynucastro 0.0.post1885+gf77b0332d
 # original NSENetwork had 13 nuclei
 #
 #   log10(rho)       log10(T)           Ye             Abar            &lt;B/A&gt;          dYe/dt         dAbar/dt        d&lt;B/A&gt;/dt         e_nu       
-   7.0000000000    9.6000000000    0.5000000000   50.2051965167    8.6280555771  -4.3798684e-05              -0   2.3285948e-06   7.4765875e+13 
-   7.0000000000    9.6000000000    0.4650000000   55.7461181560    8.7870631885  -5.5253373e-09  -6.3762211e-22   3.9317237e-10   1.3980145e+10 
+   7.0000000000    9.6000000000    0.5000000000   50.2051965167    8.6280555771  -4.3798684e-05   1.7079991e-17   2.3285948e-06   7.4765875e+13 
+   7.0000000000    9.6000000000    0.4650000000   55.7461181560    8.7870631885  -5.5253373e-09   3.4642461e-22   3.9317237e-10   1.3980145e+10 
    7.0000000000    9.6000000000    0.4300000000   11.0637644863    8.1412181124   0.00017699678  -2.9553154e-26  -1.8453759e-12   2.7707299e+14 
-   7.0000000000   10.0000000000    0.5000000000    1.2148721368    1.6682000987     0.084056593   -6.301396e-56   5.7350248e-41   7.8635828e+17 
-   7.0000000000   10.0000000000    0.4650000000    1.2129154977    1.6556759493      0.10066493    4.453029e-56   3.5220152e-41   8.3544455e+17 
-   7.0000000000   10.0000000000    0.4300000000    1.2071216016    1.6183519865       0.1178642   1.0446129e-55   5.9197765e-42   8.8944343e+17 
-   7.0000000000   10.4000000000    0.5000000000    1.0000000000    0.0000000002       5.7463273   1.137387e-218   6.744271e-203   2.3050257e+20 
-   7.0000000000   10.4000000000    0.4650000000    1.0000000000    0.0000000002       7.2542055  1.3406511e-219  5.8190855e-203    2.360043e+20 
-   7.0000000000   10.4000000000    0.4300000000    1.0000000000    0.0000000002       8.7650901 -9.2370746e-219  3.8278045e-203   2.4155562e+20 
-   8.0000000000    9.6000000000    0.5000000000   54.3190287662    8.6383977879  -0.00084867596   3.1990002e-16   4.3696922e-05   1.4741939e+15 
-   8.0000000000    9.6000000000    0.4650000000   55.8970086078    8.7873938438  -4.9038114e-08   1.2437933e-20    4.195729e-09   1.2981616e+11 
+   7.0000000000   10.0000000000    0.5000000000    1.2148721368    1.6682000987     0.084056593  -5.4549398e-56   5.7350248e-41   7.8635828e+17 
+   7.0000000000   10.0000000000    0.4650000000    1.2129154977    1.6556759493      0.10066493   5.0623909e-56   3.5220152e-41   8.3544455e+17 
+   7.0000000000   10.0000000000    0.4300000000    1.2071216016    1.6183519865       0.1178642   1.0724693e-55   5.9197765e-42   8.8944343e+17 
+   7.0000000000   10.4000000000    0.5000000000    1.0000000000    0.0000000002       5.7463273  1.1263192e-218   6.744271e-203   2.3050257e+20 
+   7.0000000000   10.4000000000    0.4650000000    1.0000000000    0.0000000002       7.2542055 -3.1186793e-218  5.8190855e-203    2.360043e+20 
+   7.0000000000   10.4000000000    0.4300000000    1.0000000000    0.0000000002       8.7650901 -9.2813584e-219  3.8278045e-203   2.4155562e+20 
+   8.0000000000    9.6000000000    0.5000000000   54.3190287663    8.6383977879  -0.00084867596   3.1990002e-16   4.3696922e-05   1.4741939e+15 
+   8.0000000000    9.6000000000    0.4650000000   55.8970086078    8.7873938438  -4.9038114e-08  -1.3245591e-20    4.195729e-09   1.2981616e+11 
    8.0000000000    9.6000000000    0.4300000000   11.0638264094    8.1412220464   9.2047376e-06  -3.3885397e-29  -5.6069146e-13   1.1254068e+13 
-   8.0000000000   10.0000000000    0.5000000000    2.5712548608    5.7636834391    -0.019589285  -2.0890078e-34   1.7213902e-19   1.6310989e+17 
-   8.0000000000   10.0000000000    0.4650000000    2.5124367565    5.6778079210   -0.0041256863   1.5932478e-33   2.1068176e-19   1.5065028e+17 
-   8.0000000000   10.0000000000    0.4300000000    2.3664071228    5.4461458125    0.0093041571  -4.3603344e-34   1.1443317e-19    1.616981e+17 
-   8.0000000000   10.4000000000    0.5000000000    1.0000000215    0.0000002024        1.213841 -1.3256128e-165  9.8468142e-150   2.1894106e+20 
-   8.0000000000   10.4000000000    0.4650000000    1.0000000212    0.0000002004       2.8346072  3.5877412e-165  8.4165829e-150   2.2127881e+20 
-   8.0000000000   10.4000000000    0.4300000000    1.0000000206    0.0000001945       4.4726034   9.619863e-166  5.4823209e-150   2.2397331e+20 
-   9.0000000000    9.6000000000    0.5000000000   55.5133155460    8.6413416287    -0.060150514              -0    0.0031209543   1.5551546e+17 
-   9.0000000000    9.6000000000    0.4650000000   55.9133553778    8.7874269700  -3.9837589e-06  -9.9303071e-19   3.6045209e-07   1.0369016e+13 
+   8.0000000000   10.0000000000    0.5000000000    2.5712548608    5.7636834391    -0.019589285   2.3924113e-33   1.7213902e-19   1.6310989e+17 
+   8.0000000000   10.0000000000    0.4650000000    2.5124367565    5.6778079210   -0.0041256863  -3.2529798e-33   2.1068176e-19   1.5065028e+17 
+   8.0000000000   10.0000000000    0.4300000000    2.3664071228    5.4461458125    0.0093041571  -4.2550123e-34   1.1443317e-19    1.616981e+17 
+   8.0000000000   10.4000000000    0.5000000000    1.0000000215    0.0000002024        1.213841  -1.257349e-165  9.8468142e-150   2.1894106e+20 
+   8.0000000000   10.4000000000    0.4650000000    1.0000000212    0.0000002004       2.8346072  3.6218234e-165  8.4165829e-150   2.2127881e+20 
+   8.0000000000   10.4000000000    0.4300000000    1.0000000206    0.0000001945       4.4726034  9.9591947e-166  5.4823209e-150   2.2397331e+20 
+   9.0000000000    9.6000000000    0.5000000000   55.5133155461    8.6413416287    -0.060150514              -0    0.0031209543   1.5551546e+17 
+   9.0000000000    9.6000000000    0.4650000000   55.9133553778    8.7874269700  -3.9837589e-06  -1.3447291e-18   3.6045209e-07   1.0369016e+13 
    9.0000000000    9.6000000000    0.4300000000   11.0638296395    8.1412222516   1.0225013e-08  -9.8140885e-34  -5.2463927e-15   1.1664591e+10 
    9.0000000000   10.0000000000    0.5000000000    4.3121776451    7.1515970038     -0.10742171   1.0474064e-18   2.9758632e-05   4.7264474e+17 
-   9.0000000000   10.0000000000    0.4650000000    5.1247512774    7.3995936852    -0.019430688   2.0151467e-19   3.3567893e-06    8.738192e+16 
-   9.0000000000   10.0000000000    0.4300000000    4.4162917436    7.0777667298   -0.0059568646   2.0912436e-21   5.1854462e-07   3.2607547e+16 
-   9.0000000000   10.4000000000    0.5000000000    1.0000214754    0.0002025496      -17.715251  7.2283688e-113   3.7269578e-96     2.77358e+20 
-   9.0000000000   10.4000000000    0.4650000000    1.0000212646    0.0002005606      -15.005795 -4.3431108e-112   3.0828704e-96   2.5962746e+20 
-   9.0000000000   10.4000000000    0.4300000000    1.0000206400    0.0001946701      -12.327314  -1.105167e-111   1.9401534e-96   2.4324141e+20 
+   9.0000000000   10.0000000000    0.4650000000    5.1247512774    7.3995936852    -0.019430688  -1.5437293e-19   3.3567893e-06    8.738192e+16 
+   9.0000000000   10.0000000000    0.4300000000    4.4162917436    7.0777667298   -0.0059568646  -1.4425951e-20   5.1854462e-07   3.2607547e+16 
+   9.0000000000   10.4000000000    0.5000000000    1.0000214754    0.0002025496      -17.715251  4.7512312e-113   3.7269578e-96     2.77358e+20 
+   9.0000000000   10.4000000000    0.4650000000    1.0000212646    0.0002005606      -15.005795 -1.2674005e-111   3.0828704e-96   2.5962746e+20 
+   9.0000000000   10.4000000000    0.4300000000    1.0000206400    0.0001946701      -12.327314 -4.2497052e-112   1.9401534e-96   2.4324141e+20 
   10.0000000000    9.6000000000    0.5000000000   55.8690710156    8.6423241378      -5.2274435              -0      0.27200888   2.9375322e+19 
-  10.0000000000    9.6000000000    0.4650000000   55.9152992533    8.7874248629  -0.00092936032  -2.6217834e-16     8.53828e-05   4.3024741e+15 
+  10.0000000000    9.6000000000    0.4650000000   55.9152992533    8.7874248629  -0.00092936032  -1.0857891e-16     8.53828e-05   4.3024741e+15 
   10.0000000000    9.6000000000    0.4300000000   11.0638297827    8.1412222607   5.0971987e-15  -9.3106432e-42  -6.8646472e-21       5801.4456 
   10.0000000000   10.0000000000    0.5000000000   13.9373408169    8.2743569660      -5.5783268              -0      0.10960359   3.9379731e+19 
-  10.0000000000   10.0000000000    0.4650000000   28.2439837438    8.6492581227    -0.075077755   2.3058172e-16   0.00050735877   5.2201547e+17 
-  10.0000000000   10.0000000000    0.4300000000   10.2419481655    8.0844804259   -0.0025107086  -7.7993291e-20    1.107337e-06   1.7236325e+16 
-  10.0000000000   10.4000000000    0.5000000000    1.0197762664    0.1829102375      -196.64449   2.8992701e-58   3.9060715e-42   2.3555843e+21 
-  10.0000000000   10.4000000000    0.4650000000    1.0195859199    0.1811835464       -167.5422   5.1753355e-58   3.0444336e-42   1.9968627e+21 
-  10.0000000000   10.4000000000    0.4300000000    1.0190251346    0.1760927406      -140.99607  -8.2714306e-59   1.8184629e-42   1.6720802e+21 
+  10.0000000000   10.0000000000    0.4650000000   28.2439837438    8.6492581227    -0.075077755   5.7484951e-16   0.00050735877   5.2201547e+17 
+  10.0000000000   10.0000000000    0.4300000000   10.2419481655    8.0844804259   -0.0025107086  -7.7992613e-20    1.107337e-06   1.7236325e+16 
+  10.0000000000   10.4000000000    0.5000000000    1.0197762664    0.1829102375      -196.64449   2.4022524e-57   3.9060715e-42   2.3555843e+21 
+  10.0000000000   10.4000000000    0.4650000000    1.0195859199    0.1811835464       -167.5422   -1.511198e-57   3.0444336e-42   1.9968627e+21 
+  10.0000000000   10.4000000000    0.4300000000    1.0190251346    0.1760927406      -140.99607  -7.2375018e-58   1.8184629e-42   1.6720802e+21 
 </pre></div>
 </div>
 </div>
@@ -787,7 +816,7 @@ By pynucastro development team
 
   <p class="copyright">
     
-      © Copyright 2024-2025, pynucastro development team.
+      © Copyright 2024-2026, pynucastro development team.
       <br/>
     
   </p>
@@ -811,8 +840,8 @@ By pynucastro development team
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
 
   <footer class="bd-footer">
   </footer>

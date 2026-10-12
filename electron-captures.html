@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Combining ReacLib Rates with Electron Capture Tables &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
+    <title>Combining ReacLib Rates with Electron Capture Tables &#8212; pynucastro 0.0.post1885+gf77b0332d documentation</title>
   
   
   
@@ -16,74 +16,72 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=4418a689" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=15ab05d9" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
 
-    <script src="_static/documentation_options.js?v=6682b979"></script>
+    <script src="_static/documentation_options.js?v=8dc8f566"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=eaa7b67c"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'electron-captures';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="alternate_rates" href="alternate-rates.html" />
     <link rel="prev" title="Tabulated Weak Rate Example" href="electron-capture-example.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.0" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -91,7 +89,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search..."
          aria-label="Search..."
          autocomplete="off"
@@ -99,15 +96,15 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -116,7 +113,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -146,7 +144,7 @@
     
     
     <img src="_static/logo.png" class="logo__image only-light" alt=""/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt=""/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt=""/>
   
   
     <p class="title logo__title">pynucastro 0.0</p>
@@ -154,15 +152,11 @@
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
@@ -176,7 +170,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus.html">Nuclear Properties</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lodders_composition.html">Solar Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solar_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -184,6 +178,7 @@
 <li class="toctree-l1"><a class="reference internal" href="plot-types.html">Plotting Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_network.html">Basic Networks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pynucastro-integration.html">Integrating a Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="starlib.html">Networks with StarLib rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
@@ -198,25 +193,29 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="inert-nuclei.html">Inert Nuclei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documenting-networks.html">Documenting Networks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="screening-examples.html">Screening Rates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom-rates.html">Creating a Custom Rate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="derived-rates.html">Derived Rates</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Approximating Rates</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="alpha-gamma-approx.html">Approximating alpha-capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="double-n-capture.html">Approximating double n-capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modified-rates.html">Modified Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="co-approximations.html">Approximating C and O Burning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branched-rates.html"><code class="docutils literal notranslate"><span class="pre">BranchedRate</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="not_in_ydot_term.html">Rate Sequences with Extra Reactants</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="approximate-rates.html">Approximate and Modified Rates</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="alpha-gamma-approx.html">Approximating alpha-capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="double-n-capture.html">Approximating double n-capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modified-rates.html">Modified Rates</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1"><a class="reference internal" href="nse-protons.html">Using NSE Protons</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unimportant-rates.html">Removing Unimportant Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="network-cycles.html">Finding Cycles (with NetworkX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="most-probable-path.html">Finding the Likely Path Between Nuclei (with NetworkX)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stiffness.html">Assessing the Stiffness of a Network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reduction.html">Network Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sens_analysis_example.html">Sensitivity Analysis</a></li>
@@ -238,6 +237,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="neutrino-cooling.html">Neutrino Cooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neutrino-cooling-effects.html">Effects of Thermal Neutrino Cooling in Network Integrations</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exporting Networks</span></p>
 <ul class="nav bd-sidenav">
@@ -255,7 +255,15 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Some Useful Networks</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="common-nets.html">Common Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mesa-basic.html">MESA <code class="docutils literal notranslate"><span class="pre">basic.net</span></code> Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cno-network.html">CNO burning network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aprox13.html">The “aprox13” network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="he-burning-example.html">A He-burning Network</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Working With Simulation Codes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mesa-nova.html">Importing MESA Models and Visualizing Reactive Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examples in Nuclear Astrophysics</span></p>
 <ul class="nav bd-sidenav">
@@ -264,7 +272,16 @@
 <li class="toctree-l1"><a class="reference internal" href="examples/hot-CNO-breakout-example.html">hot-CNO and breakout</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/triple_alpha_eval.html">Computing the Screened Triple-alpha rate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/he-burning.html">Ratio of C/O from He burning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/c-burning-products.html">Products of Carbon Burning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/supernova-lightcurve.html">A Supernova Lightcurve</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Developer Documentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rates-devel.html">Working with <code class="docutils literal notranslate"><span class="pre">Rate</span></code> Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding-rates.html">Adding Rates from the Literature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nets-devel.html">Working with Network Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jac-devel.html">Form of the Jacobian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and Comparing Backends</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
@@ -289,8 +306,10 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.amrexastro_cxx_network.html">pynucastro.networks.amrexastro_cxx_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.base_cxx_network.html">pynucastro.networks.base_cxx_network module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.common_networks.html">pynucastro.networks.common_networks module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.fortran_network.html">pynucastro.networks.fortran_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.helper.html">pynucastro.networks.helper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.network_compare.html">pynucastro.networks.network_compare module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.nse_network.html">pynucastro.networks.nse_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.python_network.html">pynucastro.networks.python_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.rate_collection.html">pynucastro.networks.rate_collection module</a></li>
@@ -304,6 +323,7 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.nucdata.html">pynucastro.nucdata package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.composition.html">pynucastro.nucdata.composition module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.elements.html">pynucastro.nucdata.elements module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.halflife_table.html">pynucastro.nucdata.halflife_table module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.mass_table.html">pynucastro.nucdata.mass_table module</a></li>
@@ -315,6 +335,8 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.rates.html">pynucastro.rates package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.alternate_rates.html">pynucastro.rates.alternate_rates module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.approximate_rates.html">pynucastro.rates.approximate_rates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.aprox_family_rates.html">pynucastro.rates.aprox_family_rates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.branched_rate.html">pynucastro.rates.branched_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.derived_rate.html">pynucastro.rates.derived_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.files.html">pynucastro.rates.files module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.known_duplicates.html">pynucastro.rates.known_duplicates module</a></li>
@@ -322,6 +344,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.modified_rate.html">pynucastro.rates.modified_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.starlib_rate.html">pynucastro.rates.starlib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
@@ -336,8 +359,10 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.screening.screening_util.html">pynucastro.screening.screening_util module</a></li>
 </ul>
 </details></li>
+<li class="toctree-l3"><a class="reference internal" href="pynucastro.mesa_utils.html">pynucastro.mesa_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.mpi_utils.html">pynucastro.mpi_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.numba_util.html">pynucastro.numba_util module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pynucastro.sort_utils.html">pynucastro.sort_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.utils.html">pynucastro.utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.yt_utils.html">pynucastro.yt_utils module</a></li>
 </ul>
@@ -358,9 +383,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -524,7 +554,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -538,24 +568,23 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
   </button>
-`);
-</script>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 
 </div></div>
       
@@ -583,7 +612,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="combining-reaclib-rates-with-electron-capture-tables">
 <h1>Combining ReacLib Rates with Electron Capture Tables<a class="headerlink" href="#combining-reaclib-rates-with-electron-capture-tables" title="Link to this heading">#</a></h1>
-<p>Here’s an example of using tabulated weak rates from <span id="id1">Suzuki <em>et al.</em> [<a class="reference internal" href="zreferences.html#id10" title="Toshio Suzuki, Hiroshi Toki, and Ken’ichi Nomoto. Electron-capture and β-decay rates for sd-shell nuclei in stellar environments relevant to high-density o–ne–mg cores. The Astrophysical Journal, 817(2):163, January 2016. doi:10.3847/0004-637X/817/2/163.">2016</a>]</span> together with rates from the ReacLib database.</p>
+<p>Here’s an example of using tabulated weak rates from <span class="bibtex-citation" id="id1">Suzuki <em>et al.</em> [<a class="reference internal" href="zreferences.html#id10" title="Toshio Suzuki, Hiroshi Toki, and Ken’ichi Nomoto. Electron-capture and β-decay rates for sd-shell nuclei in stellar environments relevant to high-density o–ne–mg cores. The Astrophysical Journal, 817(2):163, January 2016. doi:10.3847/0004-637X/817/2/163.">2016</a>]</span> together with rates from the ReacLib database.</p>
 <p>We’ll build a network suitable for e-capture supernovae.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -597,10 +626,10 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reaclib_library</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">ReacLibLibrary</span><span class="p">()</span>
 
-<span class="n">all_nuclei</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;p&quot;</span><span class="p">,</span> <span class="s2">&quot;he4&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;ne20&quot;</span><span class="p">,</span> <span class="s2">&quot;o20&quot;</span><span class="p">,</span> <span class="s2">&quot;f20&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;mg24&quot;</span><span class="p">,</span> <span class="s2">&quot;al27&quot;</span><span class="p">,</span> <span class="s2">&quot;o16&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;si28&quot;</span><span class="p">,</span> <span class="s2">&quot;s32&quot;</span><span class="p">,</span> <span class="s2">&quot;p31&quot;</span><span class="p">]</span>
+<span class="n">all_nuclei</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"p"</span><span class="p">,</span> <span class="s2">"he4"</span><span class="p">,</span>
+              <span class="s2">"ne20"</span><span class="p">,</span> <span class="s2">"o20"</span><span class="p">,</span> <span class="s2">"f20"</span><span class="p">,</span>
+              <span class="s2">"mg24"</span><span class="p">,</span> <span class="s2">"al27"</span><span class="p">,</span> <span class="s2">"o16"</span><span class="p">,</span>
+              <span class="s2">"si28"</span><span class="p">,</span> <span class="s2">"s32"</span><span class="p">,</span> <span class="s2">"p31"</span><span class="p">]</span>
 <span class="n">ecsn_library</span> <span class="o">=</span> <span class="n">reaclib_library</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">(</span><span class="n">all_nuclei</span><span class="p">,</span><span class="n">with_reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -642,7 +671,7 @@ S32 ⟶ p + P31                  [Q =  -8.86 MeV] (S32 --&gt; p + P31 &lt;reacli
 </div>
 </div>
 </div>
-<p>Now let’s specify the weak rates we want from <span id="id2">Suzuki <em>et al.</em> [<a class="reference internal" href="zreferences.html#id10" title="Toshio Suzuki, Hiroshi Toki, and Ken’ichi Nomoto. Electron-capture and β-decay rates for sd-shell nuclei in stellar environments relevant to high-density o–ne–mg cores. The Astrophysical Journal, 817(2):163, January 2016. doi:10.3847/0004-637X/817/2/163.">2016</a>]</span>.  We’ll
+<p>Now let’s specify the weak rates we want from <span class="bibtex-citation" id="id2">Suzuki <em>et al.</em> [<a class="reference internal" href="zreferences.html#id10" title="Toshio Suzuki, Hiroshi Toki, and Ken’ichi Nomoto. Electron-capture and β-decay rates for sd-shell nuclei in stellar environments relevant to high-density o–ne–mg cores. The Astrophysical Journal, 817(2):163, January 2016. doi:10.3847/0004-637X/817/2/163.">2016</a>]</span>.  We’ll
 explicitly use <a class="reference internal" href="pynucastro.rates.library.html#pynucastro.rates.library.SuzukiLibrary" title="pynucastro.rates.library.SuzukiLibrary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SuzukiLibrary</span></code></a> to only consider tabulated rates from that source.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -653,7 +682,7 @@ explicitly use <a class="reference internal" href="pynucastro.rates.library.html
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ecsn_tabular</span> <span class="o">=</span> <span class="n">tabular_lib</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">([</span><span class="s2">&quot;f20&quot;</span><span class="p">,</span> <span class="s2">&quot;o20&quot;</span><span class="p">,</span> <span class="s2">&quot;ne20&quot;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ecsn_tabular</span> <span class="o">=</span> <span class="n">tabular_lib</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">([</span><span class="s2">"f20"</span><span class="p">,</span> <span class="s2">"o20"</span><span class="p">,</span> <span class="s2">"ne20"</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -685,7 +714,7 @@ explicitly use <a class="reference internal" href="pynucastro.rates.library.html
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/3a6bb9e51f2fe1fa778d677d1d11e81cfe988595993a6cc76d57a8d341c2eb6c.png" src="_images/3a6bb9e51f2fe1fa778d677d1d11e81cfe988595993a6cc76d57a8d341c2eb6c.png" />
+<img alt="_images/fbbfaa698275b204561b8c788577674183aa844205d0a8fad344e35f7627d2dd.png" src="_images/fbbfaa698275b204561b8c788577674183aa844205d0a8fad344e35f7627d2dd.png" />
 </div>
 </div>
 <p>Let’s create a <a class="reference internal" href="pynucastro.networks.rate_collection.html#pynucastro.networks.rate_collection.RateCollection" title="pynucastro.networks.rate_collection.RateCollection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RateCollection</span></code></a> from just the ReacLib rates and look to see which are actually important</p>
@@ -700,17 +729,17 @@ explicitly use <a class="reference internal" href="pynucastro.rates.library.html
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">comp</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">Composition</span><span class="p">(</span><span class="n">rc</span><span class="o">.</span><span class="n">get_nuclei</span><span class="p">())</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;o16&quot;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;ne20&quot;</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;mg24&quot;</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;o20&quot;</span><span class="p">,</span> <span class="mf">1.e-5</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;f20&quot;</span><span class="p">,</span> <span class="mf">1.e-5</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">,</span> <span class="mf">1.e-5</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;he4&quot;</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;al27&quot;</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;si28&quot;</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;s32&quot;</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
-<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">&quot;p31&quot;</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"o16"</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"ne20"</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"mg24"</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"o20"</span><span class="p">,</span> <span class="mf">1.e-5</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"f20"</span><span class="p">,</span> <span class="mf">1.e-5</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"p"</span><span class="p">,</span> <span class="mf">1.e-5</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"he4"</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"al27"</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"si28"</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"s32"</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
+<span class="n">comp</span><span class="o">.</span><span class="n">set_nuc</span><span class="p">(</span><span class="s2">"p31"</span><span class="p">,</span> <span class="mf">1.e-2</span><span class="p">)</span>
 <span class="n">comp</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -723,7 +752,7 @@ explicitly use <a class="reference internal" href="pynucastro.rates.library.html
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/ae20ab4dc4cee3b63629b92c7960c4de6863cda579a247e13b08377d288835ca.png" src="_images/ae20ab4dc4cee3b63629b92c7960c4de6863cda579a247e13b08377d288835ca.png" />
+<img alt="_images/c5fb1f51219ebd94f7055c6933bfd6f8757185b5efdbf4da8dcd2f4767f913fb.png" src="_images/c5fb1f51219ebd94f7055c6933bfd6f8757185b5efdbf4da8dcd2f4767f913fb.png" />
 </div>
 </div>
 <div class="admonition note">
@@ -734,7 +763,8 @@ explicitly use <a class="reference internal" href="pynucastro.rates.library.html
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_rate_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">ydots</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">evaluate_rates</span><span class="p">(</span><span class="n">rho</span><span class="o">=</span><span class="mf">7.e9</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="mf">1.e9</span><span class="p">,</span> <span class="n">composition</span><span class="o">=</span><span class="n">comp</span><span class="p">)</span>
+<span class="n">state</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">ThermoState</span><span class="p">(</span><span class="n">rho</span><span class="o">=</span><span class="mf">7.e9</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="mf">1.e9</span><span class="p">,</span> <span class="n">comp</span><span class="o">=</span><span class="n">comp</span><span class="p">)</span>
+<span class="n">ydots</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">evaluate_rates</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">rate</span> <span class="ow">in</span> <span class="n">rc</span><span class="o">.</span><span class="n">rates</span><span class="p">:</span>
     <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">ydots</span><span class="p">[</span><span class="n">rate</span><span class="p">])</span> <span class="o">&gt;=</span> <span class="mf">1.e-20</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">rate</span><span class="o">.</span><span class="n">weak</span><span class="p">:</span>
         <span class="n">new_rate_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rate</span><span class="p">)</span>        
@@ -766,13 +796,13 @@ explicitly use <a class="reference internal" href="pynucastro.rates.library.html
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/0d6524d59858b1e7328a37ff9ff130df574c5e1bcffbb6552952effdc37bf8f4.png" src="_images/0d6524d59858b1e7328a37ff9ff130df574c5e1bcffbb6552952effdc37bf8f4.png" />
+<img alt="_images/7ea60519cdfa6629ec13a6e20fb90c9952cad95b152826f21a8fa472b867cecb.png" src="_images/7ea60519cdfa6629ec13a6e20fb90c9952cad95b152826f21a8fa472b867cecb.png" />
 </div>
 </div>
 <p>We can see the values of the rates at our thermodynamic conditions easily:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rc_new</span><span class="o">.</span><span class="n">evaluate_rates</span><span class="p">(</span><span class="n">rho</span><span class="o">=</span><span class="mf">7.e9</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="mf">1.e9</span><span class="p">,</span> <span class="n">composition</span><span class="o">=</span><span class="n">comp</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rc_new</span><span class="o">.</span><span class="n">evaluate_rates</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -792,9 +822,9 @@ explicitly use <a class="reference internal" href="pynucastro.rates.library.html
  Si28 + He4 ⟶ p + P31: 0.00019528201299493384,
  P31 + p ⟶ He4 + Si28: 5491.960442675607,
  F20 ⟶ Ne20 + e⁻ + 𝜈: 1.143049854823845e-14,
- F20 + e⁻ ⟶ O20 + 𝜈: 4.212096660029042e-09,
- Ne20 + e⁻ ⟶ F20 + 𝜈: 4.3100255627801964e-11,
- O20 ⟶ F20 + e⁻ + 𝜈: 2.688308786951095e-28}
+ F20 + e⁻ ⟶ O20 + 𝜈: 4.212096660029041e-09,
+ Ne20 + e⁻ ⟶ F20 + 𝜈: 4.3100255627801874e-11,
+ O20 ⟶ F20 + e⁻ + 𝜈: 2.6883087869510894e-28}
 </pre></div>
 </div>
 </div>
@@ -802,7 +832,7 @@ explicitly use <a class="reference internal" href="pynucastro.rates.library.html
 <p>Additionally, we can see the specific energy generation rate for these conditions, using <a class="reference internal" href="pynucastro.networks.rate_collection.html#pynucastro.networks.rate_collection.RateCollection.evaluate_energy_generation" title="pynucastro.networks.rate_collection.RateCollection.evaluate_energy_generation"><code class="xref py py-func docutils literal notranslate"><span class="pre">evaluate_energy_generation</span></code></a>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rc_new</span><span class="o">.</span><span class="n">evaluate_energy_generation</span><span class="p">(</span><span class="n">rho</span><span class="o">=</span><span class="mf">7.e9</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="mf">1.e9</span><span class="p">,</span> <span class="n">composition</span><span class="o">=</span><span class="n">comp</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rc_new</span><span class="o">.</span><span class="n">evaluate_energy_generation</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -869,7 +899,7 @@ By pynucastro development team
 
   <p class="copyright">
     
-      © Copyright 2024-2025, pynucastro development team.
+      © Copyright 2024-2026, pynucastro development team.
       <br/>
     
   </p>
@@ -893,8 +923,8 @@ By pynucastro development team
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
 
   <footer class="bd-footer">
   </footer>

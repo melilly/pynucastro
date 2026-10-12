@@ -31,7 +31,7 @@ and interactively exploring nuclear reaction networks.
 
    sources
    nucleus
-   lodders_composition.ipynb
+   solar_composition.ipynb
 
 .. toctree::
    :maxdepth: 1
@@ -42,6 +42,7 @@ and interactively exploring nuclear reaction networks.
    plot-types.ipynb
    basic_network.ipynb
    pynucastro-integration.ipynb
+   starlib.ipynb
 
 
 .. toctree::
@@ -63,6 +64,7 @@ and interactively exploring nuclear reaction networks.
    electron-captures.ipynb
    alternate-rates.ipynb
    inert-nuclei.ipynb
+   documenting-networks.ipynb
 
 .. toctree::
    :maxdepth: 1
@@ -70,19 +72,30 @@ and interactively exploring nuclear reaction networks.
    :hidden:
 
    screening-examples
-   modify-example.ipynb
    custom-rates.ipynb
    derived-rates
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Approximating Rates
+   :hidden:
+
+   alpha-gamma-approx.ipynb
+   double-n-capture.ipynb
+   modified-rates.ipynb
+   co-approximations.ipynb
+   branched-rates.ipynb
+   not_in_ydot_term.ipynb
 
 .. toctree::
    :maxdepth: 1
    :caption: Advanced Network Operations
    :hidden:
 
-   approximate-rates
    nse-protons.ipynb
    unimportant-rates.ipynb
    network-cycles.ipynb
+   most-probable-path.ipynb
    stiffness.ipynb
    reduction.ipynb
    sens_analysis_example.ipynb
@@ -113,6 +126,7 @@ and interactively exploring nuclear reaction networks.
    :hidden:
 
    neutrino-cooling.ipynb
+   neutrino-cooling-effects.ipynb
 
 .. toctree::
    :maxdepth: 1
@@ -131,7 +145,18 @@ and interactively exploring nuclear reaction networks.
    :caption: Some Useful Networks
    :hidden:
 
+   common-nets
+   mesa-basic
+   cno-network
+   aprox13
    he-burning-example
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Working With Simulation Codes
+   :hidden:
+
+   mesa-nova.ipynb
 
 .. toctree::
    :maxdepth: 1
@@ -143,7 +168,19 @@ and interactively exploring nuclear reaction networks.
    examples/hot-CNO-breakout-example.ipynb
    examples/triple_alpha_eval.ipynb
    examples/he-burning.ipynb
+   examples/c-burning-products.ipynb
    examples/supernova-lightcurve.ipynb
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Developer Documentation
+   :hidden:
+
+   rates-devel
+   adding-rates
+   nets-devel
+   jac-devel
+   testing
 
 .. toctree::
    :maxdepth: 1

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Plotting Examples &#8212; pynucastro 0.0.post1628+gf5dadcc7c documentation</title>
+    <title>Plotting Examples &#8212; pynucastro 0.0.post1885+gf77b0332d documentation</title>
   
   
   
@@ -16,74 +16,72 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=4418a689" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=15ab05d9" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
 
-    <script src="_static/documentation_options.js?v=6682b979"></script>
+    <script src="_static/documentation_options.js?v=8dc8f566"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=eaa7b67c"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'plot-types';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Basic Networks" href="basic_network.html" />
     <link rel="prev" title="pynucastro Usage Examples" href="pynucastro-examples.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.0" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -91,7 +89,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search..."
          aria-label="Search..."
          autocomplete="off"
@@ -99,15 +96,15 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -116,7 +113,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -146,7 +144,7 @@
     
     
     <img src="_static/logo.png" class="logo__image only-light" alt=""/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt=""/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt=""/>
   
   
     <p class="title logo__title">pynucastro 0.0</p>
@@ -154,15 +152,11 @@
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
@@ -176,7 +170,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Third Party Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus.html">Nuclear Properties</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lodders_composition.html">Solar Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solar_composition.html">Solar Composition</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pynucastro Overview</span></p>
 <ul class="current nav bd-sidenav">
@@ -184,6 +178,7 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Plotting Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_network.html">Basic Networks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pynucastro-integration.html">Integrating a Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="starlib.html">Networks with StarLib rates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with Libraries</span></p>
 <ul class="nav bd-sidenav">
@@ -198,25 +193,29 @@
 <li class="toctree-l1"><a class="reference internal" href="electron-captures.html">Combining ReacLib Rates with Electron Capture Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternate-rates.html"><code class="docutils literal notranslate"><span class="pre">alternate_rates</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="inert-nuclei.html">Inert Nuclei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documenting-networks.html">Documenting Networks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Rate Operations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="screening-examples.html">Screening Rates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modify-example.html">Modifying Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom-rates.html">Creating a Custom Rate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="derived-rates.html">Derived Rates</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Approximating Rates</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="alpha-gamma-approx.html">Approximating alpha-capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="double-n-capture.html">Approximating double n-capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modified-rates.html">Modified Rates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="co-approximations.html">Approximating C and O Burning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branched-rates.html"><code class="docutils literal notranslate"><span class="pre">BranchedRate</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="not_in_ydot_term.html">Rate Sequences with Extra Reactants</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Network Operations</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="approximate-rates.html">Approximate and Modified Rates</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="alpha-gamma-approx.html">Approximating alpha-capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="double-n-capture.html">Approximating double n-capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modified-rates.html">Modified Rates</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1"><a class="reference internal" href="nse-protons.html">Using NSE Protons</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unimportant-rates.html">Removing Unimportant Rates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="network-cycles.html">Finding Cycles (with NetworkX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="most-probable-path.html">Finding the Likely Path Between Nuclei (with NetworkX)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stiffness.html">Assessing the Stiffness of a Network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reduction.html">Network Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sens_analysis_example.html">Sensitivity Analysis</a></li>
@@ -238,6 +237,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Plasma Neutrinos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="neutrino-cooling.html">Neutrino Cooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neutrino-cooling-effects.html">Effects of Thermal Neutrino Cooling in Network Integrations</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exporting Networks</span></p>
 <ul class="nav bd-sidenav">
@@ -255,7 +255,15 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Some Useful Networks</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="common-nets.html">Common Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mesa-basic.html">MESA <code class="docutils literal notranslate"><span class="pre">basic.net</span></code> Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cno-network.html">CNO burning network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aprox13.html">The “aprox13” network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="he-burning-example.html">A He-burning Network</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Working With Simulation Codes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mesa-nova.html">Importing MESA Models and Visualizing Reactive Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examples in Nuclear Astrophysics</span></p>
 <ul class="nav bd-sidenav">
@@ -264,7 +272,16 @@
 <li class="toctree-l1"><a class="reference internal" href="examples/hot-CNO-breakout-example.html">hot-CNO and breakout</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/triple_alpha_eval.html">Computing the Screened Triple-alpha rate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/he-burning.html">Ratio of C/O from He burning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/c-burning-products.html">Products of Carbon Burning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/supernova-lightcurve.html">A Supernova Lightcurve</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Developer Documentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rates-devel.html">Working with <code class="docutils literal notranslate"><span class="pre">Rate</span></code> Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding-rates.html">Adding Rates from the Literature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nets-devel.html">Working with Network Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jac-devel.html">Form of the Jacobian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and Comparing Backends</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
@@ -289,8 +306,10 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.networks.html">pynucastro.networks package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.amrexastro_cxx_network.html">pynucastro.networks.amrexastro_cxx_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.base_cxx_network.html">pynucastro.networks.base_cxx_network module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.common_networks.html">pynucastro.networks.common_networks module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.fortran_network.html">pynucastro.networks.fortran_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.helper.html">pynucastro.networks.helper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.network_compare.html">pynucastro.networks.network_compare module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.nse_network.html">pynucastro.networks.nse_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.python_network.html">pynucastro.networks.python_network module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.networks.rate_collection.html">pynucastro.networks.rate_collection module</a></li>
@@ -304,6 +323,7 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.nucdata.html">pynucastro.nucdata package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.composition.html">pynucastro.nucdata.composition module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.elements.html">pynucastro.nucdata.elements module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.halflife_table.html">pynucastro.nucdata.halflife_table module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.nucdata.mass_table.html">pynucastro.nucdata.mass_table module</a></li>
@@ -315,6 +335,8 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="pynucastro.rates.html">pynucastro.rates package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.alternate_rates.html">pynucastro.rates.alternate_rates module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.approximate_rates.html">pynucastro.rates.approximate_rates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.aprox_family_rates.html">pynucastro.rates.aprox_family_rates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.branched_rate.html">pynucastro.rates.branched_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.derived_rate.html">pynucastro.rates.derived_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.files.html">pynucastro.rates.files module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.known_duplicates.html">pynucastro.rates.known_duplicates module</a></li>
@@ -322,6 +344,7 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.modified_rate.html">pynucastro.rates.modified_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.rate.html">pynucastro.rates.rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.reaclib_rate.html">pynucastro.rates.reaclib_rate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.starlib_rate.html">pynucastro.rates.starlib_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.tabular_rate.html">pynucastro.rates.tabular_rate module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.rates.temperature_tabular_rate.html">pynucastro.rates.temperature_tabular_rate module</a></li>
 </ul>
@@ -336,8 +359,10 @@
 <li class="toctree-l4"><a class="reference internal" href="pynucastro.screening.screening_util.html">pynucastro.screening.screening_util module</a></li>
 </ul>
 </details></li>
+<li class="toctree-l3"><a class="reference internal" href="pynucastro.mesa_utils.html">pynucastro.mesa_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.mpi_utils.html">pynucastro.mpi_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.numba_util.html">pynucastro.numba_util module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pynucastro.sort_utils.html">pynucastro.sort_utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.utils.html">pynucastro.utils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pynucastro.yt_utils.html">pynucastro.yt_utils module</a></li>
 </ul>
@@ -358,9 +383,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -524,7 +554,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -538,25 +568,24 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
   </button>
-`);
-</script>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -578,10 +607,10 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-view">Standard view</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotated-view">Rotated view</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hiding-links">Hiding links</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#showing-p-and-alpha-links">Showing <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> links</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hiding-unimportant-rates">Hiding unimportant rates</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curved-edges">Curved edges</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#showing-abundances">Showing abundances</a></li>
@@ -632,9 +661,9 @@ document.write(`
 </div>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sub</span> <span class="o">=</span> <span class="n">library</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">([</span><span class="s2">&quot;p&quot;</span><span class="p">,</span> <span class="s2">&quot;n&quot;</span><span class="p">,</span> <span class="s2">&quot;he4&quot;</span><span class="p">,</span> <span class="s2">&quot;c12&quot;</span><span class="p">,</span> <span class="s2">&quot;n13&quot;</span><span class="p">,</span> <span class="s2">&quot;n14&quot;</span><span class="p">,</span> <span class="s2">&quot;o16&quot;</span><span class="p">,</span>
-                              <span class="s2">&quot;ne20&quot;</span><span class="p">,</span> <span class="s2">&quot;ne21&quot;</span><span class="p">,</span> <span class="s2">&quot;na23&quot;</span><span class="p">,</span> <span class="s2">&quot;mg23&quot;</span><span class="p">,</span> <span class="s2">&quot;mg24&quot;</span><span class="p">,</span> <span class="s2">&quot;al27&quot;</span><span class="p">,</span>
-                              <span class="s2">&quot;si27&quot;</span><span class="p">,</span> <span class="s2">&quot;si28&quot;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sub</span> <span class="o">=</span> <span class="n">library</span><span class="o">.</span><span class="n">linking_nuclei</span><span class="p">([</span><span class="s2">"p"</span><span class="p">,</span> <span class="s2">"n"</span><span class="p">,</span> <span class="s2">"he4"</span><span class="p">,</span> <span class="s2">"c12"</span><span class="p">,</span> <span class="s2">"n13"</span><span class="p">,</span> <span class="s2">"n14"</span><span class="p">,</span> <span class="s2">"o16"</span><span class="p">,</span>
+                              <span class="s2">"ne20"</span><span class="p">,</span> <span class="s2">"ne21"</span><span class="p">,</span> <span class="s2">"na23"</span><span class="p">,</span> <span class="s2">"mg23"</span><span class="p">,</span> <span class="s2">"mg24"</span><span class="p">,</span> <span class="s2">"al27"</span><span class="p">,</span>
+                              <span class="s2">"si27"</span><span class="p">,</span> <span class="s2">"si28"</span><span class="p">])</span>
 <span class="n">rc</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">RateCollection</span><span class="p">(</span><span class="n">libraries</span><span class="o">=</span><span class="n">sub</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -648,7 +677,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/7cd708d8a9fa8c5dfb82d096ff000219fc40cc31058f9a6012e52f619f70c893.png" src="_images/7cd708d8a9fa8c5dfb82d096ff000219fc40cc31058f9a6012e52f619f70c893.png" />
+<img alt="_images/78486ba104e6146d8ed819ae613c7d0fe0ef4f85d3f1d01753d7cfc2badeee3d.png" src="_images/78486ba104e6146d8ed819ae613c7d0fe0ef4f85d3f1d01753d7cfc2badeee3d.png" />
 </div>
 </div>
 </section>
@@ -656,7 +685,7 @@ document.write(`
 <h2>Rotated view<a class="headerlink" href="#rotated-view" title="Link to this heading">#</a></h2>
 <p>Since everything lies close to the diagonal, it is hard to see the structure.  We can instead look at a rotated view of the network.</p>
 <p>While we’re at it, we’ll also color the rates by reaction rate strength by passing in the density, temperature,
-and composition (as a <a class="reference internal" href="pynucastro.networks.rate_collection.html#pynucastro.networks.rate_collection.Composition" title="pynucastro.networks.rate_collection.Composition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Composition</span></code></a> object.</p>
+and composition (as a <a class="reference internal" href="pynucastro.nucdata.composition.html#pynucastro.nucdata.composition.Composition" title="pynucastro.nucdata.composition.Composition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Composition</span></code></a> object.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rho</span> <span class="o">=</span> <span class="mf">1.e4</span>
@@ -670,16 +699,16 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">comp</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">Composition</span><span class="p">(</span><span class="n">rc</span><span class="o">.</span><span class="n">get_nuclei</span><span class="p">())</span>
 <span class="n">comp</span><span class="o">.</span><span class="n">set_all</span><span class="p">(</span><span class="mf">1.e-10</span><span class="p">)</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;he4&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;c12&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.1</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;o16&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.075</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;n13&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.05</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;n14&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.15</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;ne20&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.02</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;na23&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">1.e-4</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;mg23&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">1.e-5</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;mg24&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.005</span>
-<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;si28&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">1.e-5</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"he4"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"c12"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"o16"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.075</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"n13"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"n14"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.15</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"ne20"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.02</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"na23"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">1.e-4</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"mg23"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">1.e-5</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"mg24"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.005</span>
+<span class="n">comp</span><span class="p">[</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"si28"</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">1.e-5</span>
 <span class="n">comp</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -693,22 +722,22 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/becad1040e998467d55b21efe66f99a912e3dce22a0bc546675fdb7100c7927c.png" src="_images/becad1040e998467d55b21efe66f99a912e3dce22a0bc546675fdb7100c7927c.png" />
+<img alt="_images/4bda3910d8426b7faad53019fbbb02acd1508dfde8515a2668ffdd7b934f26fb.png" src="_images/4bda3910d8426b7faad53019fbbb02acd1508dfde8515a2668ffdd7b934f26fb.png" />
 </div>
 </div>
 </section>
-<section id="hiding-links">
-<h2>Hiding links<a class="headerlink" href="#hiding-links" title="Link to this heading">#</a></h2>
-<p>This looks a bit crowded, since it is showing all of the links to <span class="math notranslate nohighlight">\({}^4\mathrm{He}\)</span> from reactions of the form <span class="math notranslate nohighlight">\(A(x, \alpha)B\)</span>.  We can hide those links with <code class="docutils literal notranslate"><span class="pre">hide_xalpha=True</span></code>.</p>
+<section id="showing-p-and-alpha-links">
+<h2>Showing <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> links<a class="headerlink" href="#showing-p-and-alpha-links" title="Link to this heading">#</a></h2>
+<p>By default, we hide links connecting to protons and <span class="math notranslate nohighlight">\(\alpha\)</span> from rates like <span class="math notranslate nohighlight">\((p,\gamma)\)</span>, or <span class="math notranslate nohighlight">\((\alpha, \gamma)\)</span> or other variations.  You can turn these links back on by setting <code class="docutils literal notranslate"><span class="pre">hide_xalpha=False</span></code> (and similarly for protons, <code class="docutils literal notranslate"><span class="pre">hide_xp=False</span></code>).</p>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
               <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/5cec9df763c874f1796ffb53c526c6cdedb9a4ad8689e110711a3520720a8401.png" src="_images/5cec9df763c874f1796ffb53c526c6cdedb9a4ad8689e110711a3520720a8401.png" />
+<img alt="_images/2b1272ebb9beadab44fe52629ce7603e330b9b4b977dfb9bcb4898bdea8a528a.png" src="_images/2b1272ebb9beadab44fe52629ce7603e330b9b4b977dfb9bcb4898bdea8a528a.png" />
 </div>
 </div>
 </section>
@@ -717,27 +746,27 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 <p>We can omit edges from the plot for rates that are below a cutoff value, using <code class="docutils literal notranslate"><span class="pre">ydot_cutoff_value</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
               <span class="n">ydot_cutoff_value</span><span class="o">=</span><span class="mf">1.e-50</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/cb66619c17302c42aaa740e197e5c34165315c250e7afacf9c33ad3be66b6147.png" src="_images/cb66619c17302c42aaa740e197e5c34165315c250e7afacf9c33ad3be66b6147.png" />
+<img alt="_images/bb40ae7fe2eeb64746e1909ce379a0e6c428f74ff5bc61f219d794fa8428fcd6.png" src="_images/bb40ae7fe2eeb64746e1909ce379a0e6c428f74ff5bc61f219d794fa8428fcd6.png" />
 </div>
 </div>
 <p>Sometimes, for a given nucleus, there are multiple rates that consume it, but one might be much more dominant than the others.  We can set a threshold to old show the rates consuming a nucleus if they are within a desired factor of the fastest rate using <code class="docutils literal notranslate"><span class="pre">consuming_rate_threshold</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
               <span class="n">consuming_rate_threshold</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/80a225a56074ca40e49de331ec1fcc79784516baed1c26acf4ecf16dae46b66a.png" src="_images/80a225a56074ca40e49de331ec1fcc79784516baed1c26acf4ecf16dae46b66a.png" />
+<img alt="_images/e9afd9329cf33698750e172bed6ba9fdda4df8246ccacc88c79c63bcd14b397f.png" src="_images/e9afd9329cf33698750e172bed6ba9fdda4df8246ccacc88c79c63bcd14b397f.png" />
 </div>
 </div>
 </section>
@@ -746,14 +775,14 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 <p>We can also plot the edges curved, to help distinguish the forward and reverse rates.</p>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
               <span class="n">curved_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/ec1a6ccb78c686db288cd06c0aff1b20e21bdb3efb2936dbed85fa592dcd650d.png" src="_images/ec1a6ccb78c686db288cd06c0aff1b20e21bdb3efb2936dbed85fa592dcd650d.png" />
+<img alt="_images/b90f8071b6b9e8613dc3a396b39bfbcad1d9a9b3983dc7c8a0fb7265c47a5391.png" src="_images/b90f8071b6b9e8613dc3a396b39bfbcad1d9a9b3983dc7c8a0fb7265c47a5391.png" />
 </div>
 </div>
 </section>
@@ -762,7 +791,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 <p>We can also color the nodes by abundance (mass fraction):</p>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">color_nodes_by_abundance</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">curved_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -770,13 +799,13 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/897d94e0b9975641c83eebc18154f8a2d15ada212bc57b78a523ec3705b857df.png" src="_images/897d94e0b9975641c83eebc18154f8a2d15ada212bc57b78a523ec3705b857df.png" />
+<img alt="_images/252aa8da96a9c1b50be2551753fc051b951a9e402200396fa80829d2861d1eb4.png" src="_images/252aa8da96a9c1b50be2551753fc051b951a9e402200396fa80829d2861d1eb4.png" />
 </div>
 </div>
 <p>We can also display the edges as the net rate (forward - reverse) as a single directed edge using <code class="docutils literal notranslate"><span class="pre">use_net_rate</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">color_nodes_by_abundance</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">use_net_rate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -784,7 +813,7 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/54c7a60abfe3e02d3147693fced1c98ab283a7be943038bf55b1e1dec47f1976.png" src="_images/54c7a60abfe3e02d3147693fced1c98ab283a7be943038bf55b1e1dec47f1976.png" />
+<img alt="_images/40e779c16b89a8846437ae3b683f6ef8d86cb4c7f7c78255c1710c84c5642262.png" src="_images/40e779c16b89a8846437ae3b683f6ef8d86cb4c7f7c78255c1710c84c5642262.png" />
 </div>
 </div>
 </section>
@@ -793,35 +822,35 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 <p>To help understand the different rate types, we can add a “compass rose” style legend that shows the directions of key captures.  We specify the location in terms of (Z, N)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-              <span class="n">curved_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">legend_coord</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+              <span class="n">use_net_rate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">legend_coord</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/7020433691fbb0ef5748c81a239c823b57933e44a93e8d9fa1ac6d36c093c4b1.png" src="_images/7020433691fbb0ef5748c81a239c823b57933e44a93e8d9fa1ac6d36c093c4b1.png" />
+<img alt="_images/5205253854e1f11f406d4d56c3876a280c9c42774b5a2ea5086f73b4a344bfe0.png" src="_images/5205253854e1f11f406d4d56c3876a280c9c42774b5a2ea5086f73b4a344bfe0.png" />
 </div>
 </div>
 <p>Any edge can be labelled by passing a dictionary keyed by a tuple of the nodes in the network.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">edge_labels</span> <span class="o">=</span> <span class="p">{(</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;he4&quot;</span><span class="p">),</span> <span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;c12&quot;</span><span class="p">)):</span>
-               <span class="sa">r</span><span class="s2">&quot;$\alpha(\alpha\alpha,\gamma)</span><span class="si">{}</span><span class="s2">^</span><span class="si">{12}</span><span class="s2">\mathrm</span><span class="si">{C}</span><span class="s2">$&quot;</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">edge_labels</span> <span class="o">=</span> <span class="p">{(</span><span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"he4"</span><span class="p">),</span> <span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"c12"</span><span class="p">)):</span>
+               <span class="sa">r</span><span class="s2">"$\alpha(\alpha\alpha,\gamma)</span><span class="si">{}</span><span class="s2">^</span><span class="si">{12}</span><span class="s2">\mathrm</span><span class="si">{C}</span><span class="s2">$"</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">edge_labels</span><span class="o">=</span><span class="n">edge_labels</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1200</span><span class="p">,</span> <span class="mi">700</span><span class="p">),</span>
               <span class="n">curved_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/b89eb0420be5a03938839fb1da36978198e429f8f6058471b121855e05f047ce.png" src="_images/b89eb0420be5a03938839fb1da36978198e429f8f6058471b121855e05f047ce.png" />
+<img alt="_images/1c511ec186ea8ccb9b0cf1d25c4298c3ef91f3e945b1f2e98e4dbd23e8f0b10b.png" src="_images/1c511ec186ea8ccb9b0cf1d25c4298c3ef91f3e945b1f2e98e4dbd23e8f0b10b.png" />
 </div>
 </div>
 </section>
@@ -830,28 +859,28 @@ and composition (as a <a class="reference internal" href="pynucastro.networks.ra
 <p>We can use a rate filter, via <code class="docutils literal notranslate"><span class="pre">rate_filter_function</span></code>, to show only certain links.  For example, to show only links involving proton capture, we can do:</p>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">comp</span><span class="p">,</span> <span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">node_font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-              <span class="n">rate_filter_function</span><span class="o">=</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">reactants</span><span class="p">)</span>
+              <span class="n">rate_filter_function</span><span class="o">=</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">pyna</span><span class="o">.</span><span class="n">Nucleus</span><span class="p">(</span><span class="s2">"p"</span><span class="p">)</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">reactants</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/071dd62ac7a4fe33767d71b55b68f901a9ae15ba3535baad54824d492e2f0c8f.png" src="_images/071dd62ac7a4fe33767d71b55b68f901a9ae15ba3535baad54824d492e2f0c8f.png" />
+<img alt="_images/54fa33409931bb73380cf77acbaf00a8bbc46e311fae450d4905ff36f71b5e9b.png" src="_images/54fa33409931bb73380cf77acbaf00a8bbc46e311fae450d4905ff36f71b5e9b.png" />
 </div>
 </div>
 <p>We can also highlight rates using the <code class="docutils literal notranslate"><span class="pre">highlight_filter_function</span></code> mechanism.  This takes a function that operates on a rate and returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if we wish to highlight the rate (i.e., as if we used a highlighter marker over the line).</p>
 <p>Here’s an example where we highlight the rates that have <span class="math notranslate nohighlight">\(Q &gt; 0\)</span></p>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hide_xalpha</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1500</span><span class="p">,</span> <span class="mi">600</span><span class="p">),</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rotated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1500</span><span class="p">,</span> <span class="mi">600</span><span class="p">),</span>
               <span class="n">highlight_filter_function</span><span class="o">=</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">r</span><span class="o">.</span><span class="n">Q</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span>
               <span class="n">curved_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/7f32eb0feda7a4ef1c1270fb491109b4c3e8be3c6fcc64aea9d265e5937d2cab.png" src="_images/7f32eb0feda7a4ef1c1270fb491109b4c3e8be3c6fcc64aea9d265e5937d2cab.png" />
+<img alt="_images/0713f728b45c40b099914c9412c4b14d52c30166d56ab4a7bb1bec14c144e879.png" src="_images/0713f728b45c40b099914c9412c4b14d52c30166d56ab4a7bb1bec14c144e879.png" />
 </div>
 </div>
 </section>
@@ -881,7 +910,11 @@ where</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/628036620620801b10b5fb15c3f8610edf267a434548540484ef54af64023411.png" src="_images/628036620620801b10b5fb15c3f8610edf267a434548540484ef54af64023411.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3712/521355089.py:4: DeprecationWarning: plot_jacobian(rho, T, comp, ...) is deprecated, use plot_jacobian(ThermoState(rho=rho, T=T, comp=comp,  ...) instead
+  fig = rc.plot_jacobian(rho, T, comp, rate_scaling=1.e10)
+</pre></div>
+</div>
+<img alt="_images/392592c5f5cca63bfbc121a6a663e4a2e466ae4cc161488b3aa7796815e571a5.png" src="_images/392592c5f5cca63bfbc121a6a663e4a2e466ae4cc161488b3aa7796815e571a5.png" />
 </div>
 </div>
 <div class="admonition warning">
@@ -895,14 +928,14 @@ where</p>
 <p>Calling <code class="docutils literal notranslate"><span class="pre">gridplot</span></code> without any arguments will just plot the grid—to see anything interesting we need to supply some conditions. Here is a plot of nuclide mass fraction on a log scale, with a 36 square inch figure:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rate_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;c12(p,g)n13&quot;</span><span class="p">,</span> 
-              <span class="s2">&quot;c13(p,g)n14&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;n13(,)c13&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;n13(p,g)o14&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;n14(p,g)o15&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;n15(p,a)c12&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;o14(,)n14&quot;</span><span class="p">,</span>
-              <span class="s2">&quot;o15(,)n15&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rate_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"c12(p,g)n13"</span><span class="p">,</span> 
+              <span class="s2">"c13(p,g)n14"</span><span class="p">,</span>
+              <span class="s2">"n13(,)c13"</span><span class="p">,</span>
+              <span class="s2">"n13(p,g)o14"</span><span class="p">,</span>
+              <span class="s2">"n14(p,g)o15"</span><span class="p">,</span>
+              <span class="s2">"n15(p,a)c12"</span><span class="p">,</span>
+              <span class="s2">"o14(,)n14"</span><span class="p">,</span>
+              <span class="s2">"o15(,)n15"</span><span class="p">]</span>
 <span class="n">rates</span> <span class="o">=</span> <span class="n">library</span><span class="o">.</span><span class="n">get_rate_by_name</span><span class="p">(</span><span class="n">rate_names</span><span class="p">)</span>
 <span class="n">rc</span> <span class="o">=</span> <span class="n">pyna</span><span class="o">.</span><span class="n">RateCollection</span><span class="p">(</span><span class="n">rates</span><span class="o">=</span><span class="n">rates</span><span class="p">)</span>
 </pre></div>
@@ -921,24 +954,24 @@ where</p>
 </div>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">gridplot</span><span class="p">(</span><span class="n">comp</span><span class="o">=</span><span class="n">comp</span><span class="p">,</span> <span class="n">color_field</span><span class="o">=</span><span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="s2">&quot;log&quot;</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="mi">36</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">gridplot</span><span class="p">(</span><span class="n">comp</span><span class="o">=</span><span class="n">comp</span><span class="p">,</span> <span class="n">color_field</span><span class="o">=</span><span class="s2">"X"</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="s2">"log"</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="mi">36</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/dfee00861b7af88576e13ee2e5ab81b700c917f4361874bc8e55753062bf0272.png" src="_images/dfee00861b7af88576e13ee2e5ab81b700c917f4361874bc8e55753062bf0272.png" />
+<img alt="_images/3e325e061c753f7019ec537b3a2491ae511b7f3d291c6ca9b3487a74f9aff547.png" src="_images/3e325e061c753f7019ec537b3a2491ae511b7f3d291c6ca9b3487a74f9aff547.png" />
 </div>
 </div>
 <p>The plot is configurable through a large number of keyword arguments. Here we want to look at the rates at which nuclides are being created or destroyed, so we color by <span class="math notranslate nohighlight">\(\dot{Y}\)</span>, the rate of change of molar abundance. Density and temperature need to be supplied to evaluate the rates. A full list of valid keyword arguments can be found in the API documentation.</p>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">gridplot</span><span class="p">(</span><span class="n">comp</span><span class="o">=</span><span class="n">comp</span><span class="p">,</span> <span class="n">rho</span><span class="o">=</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> <span class="n">color_field</span><span class="o">=</span><span class="s2">&quot;ydot&quot;</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="mi">36</span><span class="p">,</span>
-                  <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;RdGy&quot;</span><span class="p">,</span> <span class="n">cbar_bounds</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">gridplot</span><span class="p">(</span><span class="n">comp</span><span class="o">=</span><span class="n">comp</span><span class="p">,</span> <span class="n">rho</span><span class="o">=</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> <span class="n">color_field</span><span class="o">=</span><span class="s2">"ydot"</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="mi">36</span><span class="p">,</span>
+                  <span class="n">cmap</span><span class="o">=</span><span class="s2">"RdGy"</span><span class="p">,</span> <span class="n">cbar_bounds</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/84f9f445db82b5c2364ee2096cd92be33c0708fa8f3582b073cdf6e321a0904f.png" src="_images/84f9f445db82b5c2364ee2096cd92be33c0708fa8f3582b073cdf6e321a0904f.png" />
+<img alt="_images/70baa376e1895385f857622123894b3b7772f8cc366626eeac56087964727e2e.png" src="_images/70baa376e1895385f857622123894b3b7772f8cc366626eeac56087964727e2e.png" />
 </div>
 </div>
 <p>Unlike the network plot, this won’t omit hydrogen and helium by default. To just look at the heavier nuclides, we can define a function to filter by proton number.  Here we also plot
@@ -946,13 +979,13 @@ where</p>
 <div class="cell tag_nbval-ignore-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ff</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">nuc</span><span class="p">:</span> <span class="n">nuc</span><span class="o">.</span><span class="n">Z</span> <span class="o">&gt;</span> <span class="mi">2</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">gridplot</span><span class="p">(</span><span class="n">comp</span><span class="o">=</span><span class="n">comp</span><span class="p">,</span> <span class="n">rho</span><span class="o">=</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> <span class="n">color_field</span><span class="o">=</span><span class="s2">&quot;activity&quot;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="s2">&quot;log&quot;</span><span class="p">,</span>
-                  <span class="n">filter_function</span><span class="o">=</span><span class="n">ff</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Blues&quot;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">gridplot</span><span class="p">(</span><span class="n">comp</span><span class="o">=</span><span class="n">comp</span><span class="p">,</span> <span class="n">rho</span><span class="o">=</span><span class="n">rho</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> <span class="n">color_field</span><span class="o">=</span><span class="s2">"activity"</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="s2">"log"</span><span class="p">,</span>
+                  <span class="n">filter_function</span><span class="o">=</span><span class="n">ff</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">"Blues"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/cb88425199a7d774c07e75d617c8cd0797ffaef286b8fbce5a01cd9fd3f2d86a.png" src="_images/cb88425199a7d774c07e75d617c8cd0797ffaef286b8fbce5a01cd9fd3f2d86a.png" />
+<img alt="_images/0c5e9ba1186fcecfb4206cdda134b9bde414ab18aec6ef966e0e76c3307b5042.png" src="_images/0c5e9ba1186fcecfb4206cdda134b9bde414ab18aec6ef966e0e76c3307b5042.png" />
 </div>
 </div>
 </section>
@@ -966,7 +999,11 @@ where</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/b93559dc57840e807b7ceb8ffe09ab40c9993db9c8744829bde050bf40559b41.png" src="_images/b93559dc57840e807b7ceb8ffe09ab40c9993db9c8744829bde050bf40559b41.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3712/1870448911.py:1: DeprecationWarning: plot_network_chart(rho, T, comp, ...) is deprecated, use plot_network_chart(ThermoState(rho=rho, T=T, comp=comp,  ...) instead
+  fig = rc.plot_network_chart(rho, T, comp)
+</pre></div>
+</div>
+<img alt="_images/9d73a60c39db1e7e55f8855202c4deedd16f27c58d4c0dc2f1c3c6cd22ffec19.png" src="_images/9d73a60c39db1e7e55f8855202c4deedd16f27c58d4c0dc2f1c3c6cd22ffec19.png" />
 </div>
 </div>
 </section>
@@ -1008,18 +1045,20 @@ where</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-view">Standard view</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotated-view">Rotated view</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hiding-links">Hiding links</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#showing-p-and-alpha-links">Showing <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> links</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hiding-unimportant-rates">Hiding unimportant rates</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curved-edges">Curved edges</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#showing-abundances">Showing abundances</a></li>
@@ -1052,7 +1091,7 @@ By pynucastro development team
 
   <p class="copyright">
     
-      © Copyright 2024-2025, pynucastro development team.
+      © Copyright 2024-2026, pynucastro development team.
       <br/>
     
   </p>
@@ -1076,8 +1115,8 @@ By pynucastro development team
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
 
   <footer class="bd-footer">
   </footer>
